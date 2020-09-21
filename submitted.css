@@ -1,0 +1,322 @@
+* {
+    box-sizing: border-box;
+}
+
+h1, p, a {
+    color: white;
+}
+
+body {
+    /*preloading images*/
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fqzmhjg1ycrz21.jpg&f=1&nofb=1"), url("https://i.imgur.com/vwgTW.jpg"), url("https://i.imgur.com/ZmTa2.jpg"), url("https://i.imgur.com/oJHnD.jpg"), url("https://i.imgur.com/YmgKL.jpg");
+    font-family: Georgia;
+    animation-name: image-gallery;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/*To slow down fade-in effects, must consider every frame*/
+/*
+  white flash happens when transitioning between elements on first cycle of animation, one 
+  way to fix this is by "preloading" images to fix"
+  https://stackoverflow.com/questions/46048321/how-to-get-rid-of-the-white-flash-when-changing-background-image-with-animation
+*/
+
+@keyframes image-gallery {
+    1% {background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fqzmhjg1ycrz21.jpg&f=1&nofb=1");}
+    2% {background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fqzmhjg1ycrz21.jpg&f=1&nofb=1");}
+    3% {background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fqzmhjg1ycrz21.jpg&f=1&nofb=1");}
+    4% {background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fqzmhjg1ycrz21.jpg&f=1&nofb=1");}
+    5% {background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fqzmhjg1ycrz21.jpg&f=1&nofb=1");}
+    6% {background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fqzmhjg1ycrz21.jpg&f=1&nofb=1");}
+    7% {background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fqzmhjg1ycrz21.jpg&f=1&nofb=1");}
+    8% {background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fqzmhjg1ycrz21.jpg&f=1&nofb=1");}
+    9% {background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fqzmhjg1ycrz21.jpg&f=1&nofb=1");}
+    10% {background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fqzmhjg1ycrz21.jpg&f=1&nofb=1");}
+    11% {background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fqzmhjg1ycrz21.jpg&f=1&nofb=1");}
+    12% {background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fqzmhjg1ycrz21.jpg&f=1&nofb=1");}
+    13% {background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fqzmhjg1ycrz21.jpg&f=1&nofb=1");}
+    14% {background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fqzmhjg1ycrz21.jpg&f=1&nofb=1");}
+    15% {background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fqzmhjg1ycrz21.jpg&f=1&nofb=1");}
+    16% {background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fqzmhjg1ycrz21.jpg&f=1&nofb=1");}
+    17% {background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fqzmhjg1ycrz21.jpg&f=1&nofb=1");}
+    /*
+    18% {background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fqzmhjg1ycrz21.jpg&f=1&nofb=1");}
+    19% {background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fqzmhjg1ycrz21.jpg&f=1&nofb=1");}
+    */
+    20% {background-image: url("https://i.imgur.com/vwgTW.jpg");}
+    21% {background-image: url("https://i.imgur.com/vwgTW.jpg");}
+    22% {background-image: url("https://i.imgur.com/vwgTW.jpg");}
+    23% {background-image: url("https://i.imgur.com/vwgTW.jpg");}
+    24% {background-image: url("https://i.imgur.com/vwgTW.jpg");}
+    25% {background-image: url("https://i.imgur.com/vwgTW.jpg");}
+    26% {background-image: url("https://i.imgur.com/vwgTW.jpg");}
+    27% {background-image: url("https://i.imgur.com/vwgTW.jpg");}
+    28% {background-image: url("https://i.imgur.com/vwgTW.jpg");}
+    29% {background-image: url("https://i.imgur.com/vwgTW.jpg");}
+    30% {background-image: url("https://i.imgur.com/vwgTW.jpg");}
+    31% {background-image: url("https://i.imgur.com/vwgTW.jpg");}
+    32% {background-image: url("https://i.imgur.com/vwgTW.jpg");}
+    33% {background-image: url("https://i.imgur.com/vwgTW.jpg");}
+    34% {background-image: url("https://i.imgur.com/vwgTW.jpg");}
+    35% {background-image: url("https://i.imgur.com/vwgTW.jpg");}
+    36% {background-image: url("https://i.imgur.com/vwgTW.jpg");}
+    37% {background-image: url("https://i.imgur.com/vwgTW.jpg");}
+    /*
+    38% {background-image: url("https://i.imgur.com/vwgTW.jpg");}
+    39% {background-image: url("https://i.imgur.com/vwgTW.jpg");}
+    */
+    40% {background-image: url("https://i.imgur.com/ZmTa2.jpg");}
+    41% {background-image: url("https://i.imgur.com/ZmTa2.jpg");}
+    42% {background-image: url("https://i.imgur.com/ZmTa2.jpg");}
+    43% {background-image: url("https://i.imgur.com/ZmTa2.jpg");}
+    44% {background-image: url("https://i.imgur.com/ZmTa2.jpg");}
+    45% {background-image: url("https://i.imgur.com/ZmTa2.jpg");}
+    46% {background-image: url("https://i.imgur.com/ZmTa2.jpg");}
+    47% {background-image: url("https://i.imgur.com/ZmTa2.jpg");}
+    48% {background-image: url("https://i.imgur.com/ZmTa2.jpg");}
+    49% {background-image: url("https://i.imgur.com/ZmTa2.jpg");}
+    50% {background-image: url("https://i.imgur.com/ZmTa2.jpg");}
+    51% {background-image: url("https://i.imgur.com/ZmTa2.jpg");}
+    52% {background-image: url("https://i.imgur.com/ZmTa2.jpg");}
+    53% {background-image: url("https://i.imgur.com/ZmTa2.jpg");}
+    54% {background-image: url("https://i.imgur.com/ZmTa2.jpg");}
+    55% {background-image: url("https://i.imgur.com/ZmTa2.jpg");}
+    56% {background-image: url("https://i.imgur.com/ZmTa2.jpg");}
+    57% {background-image: url("https://i.imgur.com/ZmTa2.jpg");}
+    /*
+    58% {background-image: url("https://i.imgur.com/ZmTa2.jpg");}
+    59% {background-image: url("https://i.imgur.com/ZmTa2.jpg");}
+    */
+    60% {background-image: url("https://i.imgur.com/oJHnD.jpg");}
+    61% {background-image: url("https://i.imgur.com/oJHnD.jpg");}
+    62% {background-image: url("https://i.imgur.com/oJHnD.jpg");}
+    63% {background-image: url("https://i.imgur.com/oJHnD.jpg");}
+    64% {background-image: url("https://i.imgur.com/oJHnD.jpg");}
+    65% {background-image: url("https://i.imgur.com/oJHnD.jpg");}
+    66% {background-image: url("https://i.imgur.com/oJHnD.jpg");}
+    67% {background-image: url("https://i.imgur.com/oJHnD.jpg");}
+    68% {background-image: url("https://i.imgur.com/oJHnD.jpg");}
+    69% {background-image: url("https://i.imgur.com/oJHnD.jpg");}
+    70% {background-image: url("https://i.imgur.com/oJHnD.jpg");}
+    71% {background-image: url("https://i.imgur.com/oJHnD.jpg");}
+    72% {background-image: url("https://i.imgur.com/oJHnD.jpg");}
+    73% {background-image: url("https://i.imgur.com/oJHnD.jpg");}
+    74% {background-image: url("https://i.imgur.com/oJHnD.jpg");}
+    75% {background-image: url("https://i.imgur.com/oJHnD.jpg");}
+    76% {background-image: url("https://i.imgur.com/oJHnD.jpg");}
+    77% {background-image: url("https://i.imgur.com/oJHnD.jpg");}
+    /*
+    78% {background-image: url("https://i.imgur.com/oJHnD.jpg");}
+    79% {background-image: url("https://i.imgur.com/oJHnD.jpg");}
+    */
+    80% {background-image: url("https://i.imgur.com/YmgKL.jpg");}
+    81% {background-image: url("https://i.imgur.com/YmgKL.jpg");}
+    82% {background-image: url("https://i.imgur.com/YmgKL.jpg");}
+    83% {background-image: url("https://i.imgur.com/YmgKL.jpg");}
+    84% {background-image: url("https://i.imgur.com/YmgKL.jpg");}
+    85% {background-image: url("https://i.imgur.com/YmgKL.jpg");}
+    86% {background-image: url("https://i.imgur.com/YmgKL.jpg");}
+    87% {background-image: url("https://i.imgur.com/YmgKL.jpg");}
+    88% {background-image: url("https://i.imgur.com/YmgKL.jpg");}
+    89% {background-image: url("https://i.imgur.com/YmgKL.jpg");}
+    90% {background-image: url("https://i.imgur.com/YmgKL.jpg");}
+    91% {background-image: url("https://i.imgur.com/YmgKL.jpg");}
+    92% {background-image: url("https://i.imgur.com/YmgKL.jpg");}
+    93% {background-image: url("https://i.imgur.com/YmgKL.jpg");}
+    94% {background-image: url("https://i.imgur.com/YmgKL.jpg");}
+    95% {background-image: url("https://i.imgur.com/YmgKL.jpg");}
+    96% {background-image: url("https://i.imgur.com/YmgKL.jpg");}
+    97% {background-image: url("https://i.imgur.com/YmgKL.jpg");}
+    /*
+    98% {background-image: url("https://i.imgur.com/YmgKL.jpg");}
+    99% {background-image: url("https://i.imgur.com/YmgKL.jpg");}
+    */
+    100% {background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fqzmhjg1ycrz21.jpg&f=1&nofb=1");}
+    
+}
+
+.grid {
+    width: 1500px;
+    height: 1050px;
+    /* border: 2px blue solid; */
+    display: grid;
+    align-content: top;
+    grid-template-columns: 225px 1050px 225px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+
+
+.column-one {
+    /* border: 2px red solid; */
+}
+
+.main-content-column {
+    /* border: 1px green solid; */
+    display: inline-block;
+}
+
+.main-content {
+    background-color: #1B2124;
+    opacity: 0.99;
+    position: fixed;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 30px;
+    height: 225px;
+    width: 1048px;
+}
+
+.main-content h1, .main-content p, .main-content a {
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; 
+}
+
+
+
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.submit {
+    color: white;
+    transition-property: color;
+    transition-duration: 0s;
+}
+
+
+
+.tf2-icon {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 50px;
+    margin-left: 15px;
+    visibility: hidden;
+    position: absolute;
+    animation-name: spin;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    0%   {transform: rotate(-360deg);}
+}
+
+.submit:hover {
+    color: rgb(109, 109, 255);
+}
+
+.submit:hover ~ .tf2-icon {
+    visibility: visible;
+}
+
+.column-three {
+    /* border: 2px yellow solid; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.open-navbar-button-area {
+    background-color: black;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    float: right;
+    position: fixed;
+    /* right: 100px; */
+    z-index: 2;
+}
+
+.open-navbar-button {
+    color: gray;
+    font-size: 50px;
+    margin-top: -1px;
+    transition-property: color;
+    transition-duration: 0.2s;
+}
+
+.open-navbar-button:hover {
+    color: white;
+}
+
+.navbar {
+    background-color: black;
+    z-index: 1;
+    /* border: 2px white solid; */
+    width: 0px;
+    height: 1050px;
+    /* font-weight: bold; */
+    display: block;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: fixed;
+    /*makes it open from the right for some reason*/
+    right: 0;
+    transition-property: width;
+    transition-duration: 0.5s;
+    color: gray;
+    padding-top: 30px;
+}
+
+.navbar .main-link {
+    padding-top: 8px;
+    padding-bottom: 0px;
+    padding-left: 32px;
+    padding-right: 0px;
+    text-decoration: none;
+    font-size: 25px;
+    white-space: nowrap;
+    color: #a3a3a3;
+    display: block;
+    transition-duration: 0.3s;
+    transition-property: color;
+}
+
+.navbar .main-link:hover {
+    color: white;
+}
+
+.about-creator p, .about-game p, .about-credits p, .about-disclaimer p  {
+    padding-left: 32px;
+    /*prevents text from spazzing the fk out*/
+    white-space: nowrap;
+    /* position: absolute; */
+}
+
+.about-credits #user-link, .about-credits #website-link {
+    color: rgb(98, 98, 255);
+    transition-property: color;
+    transition-duration: 0.1s;
+}
+
+.about-credits #user-link:hover, .about-credits #website-link:hover  {
+    color: rgb(142, 142, 252);
+}
+
+#close-navbar-button {
+    color: rgb(173, 173, 173);
+    transition: color;
+    transition-duration: 0.2s;
+    padding-right: 20px;
+    padding-left: 32px;
+    font-size: 50px;
+    position: absolute;
+    left: 210px;
+    margin-top: -30px;
+
+}
+
+#close-navbar-button:hover {
+    color: white;
+}

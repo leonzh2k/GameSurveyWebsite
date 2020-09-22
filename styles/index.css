@@ -7,8 +7,8 @@
 
 body {
     text-align: left;
-    background-image: url("../images/2fort.jpg");
-    /* background-color: rgb(145, 42, 1); */
+    /* background-image: url("../images/2fort.jpg"); */
+    background-color: rgb(145, 42, 1);
     font-family: Georgia;
     min-width: 10px;
     min-height: 10px;

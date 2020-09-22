@@ -178,14 +178,14 @@ function clearFormInput() {
     localStorage.removeItem("Question9");
     localStorage.removeItem("Question10");
     //reload page
-    window.location.replace("../confirm.html")
+    window.location.replace("confirm.html")
 }
 
 function clearLocalStorage() {
     //question 1
     localStorage.clear();
     //reload page
-    window.location.replace("../confirm.html")
+    window.location.replace("confirm.html")
 }
 
 

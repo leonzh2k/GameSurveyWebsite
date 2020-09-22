@@ -187,7 +187,7 @@ function clearFormInput() {
     localStorage.removeItem("Question9");
     localStorage.removeItem("Question10");
     //reload page
-    window.location.replace("index.html")
+    window.location.replace("../index.html")
 }
 
 function clearLocalStorage() {
@@ -196,7 +196,7 @@ function clearLocalStorage() {
     localStorage.clear();
     // localStorage.setItem("clearedStorage", "true");
     //reload page
-    window.location.replace("index.html")
+    window.location.replace("../index.html")
 }
 
 // called when local storage is cleared. Without this, any existing form input will 

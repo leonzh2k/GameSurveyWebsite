@@ -1,12 +1,17 @@
 
 window.addEventListener('load', 
 function() { 
-    checkSettings();
-    checkNightMode();
-    getDefaultFormHeight();
-    //calling adjustFooter without timeout results in the default height value output, not what we want
-    //we want the height value after everything has loaded properly
-    setTimeout(() => { adjustFooter(); }, 100);
+    try {
+        checkSettings();
+        checkNightMode();
+        getDefaultFormHeight();
+        //calling adjustFooter without timeout results in the default height value output, not what we want
+        //we want the height value after everything has loaded properly
+        setTimeout(() => { adjustFooter(); }, 100);
+    }
+    catch(err) {
+        alert(err.message);
+    }
 }, false);
 
 

@@ -4,9 +4,15 @@
 //window onload only works for one script so other pages cannot use it.
 window.onload=function(){
     //setClickedGoBack();
-    checkSettings();
-    checkNightMode();
-    refillForm();
+    try {
+        checkSettings();
+        checkNightMode();
+        refillForm();
+    }
+    catch(err) {
+        alert(err.message)
+    }
+    
 }
 
 window.onbeforeunload = function() {

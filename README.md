@@ -8,3 +8,7 @@ Form Validation
 Night Mode
 Saves Form Input
 Clear Form Input and Clear all storage options
+
+Features to Implement:
+Responsive Web Design
+Mobile Support

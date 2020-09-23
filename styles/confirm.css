@@ -5,10 +5,12 @@
 
 body {
     text-align: left;
-    background-image: url("../images/2fort.jpg");
+    /* background-image: url("../images/2fort.jpg"); */
+    background-color: red;
     font-family: Georgia;
-    min-width: 10px;
-    min-height: 10px;
+    max-width: 100%;
+    /* min-width: 10px;
+    min-height: 10px; */
 }
 
 .answer-short {

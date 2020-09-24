@@ -141,7 +141,7 @@ textarea {
 }
 
 .left-column {
-    /* border: 2px red solid; */
+    border: 2px red solid;
     height: 1125px;
 }
 
@@ -215,7 +215,7 @@ textarea {
 }
 
 .settings-column {
-    /* border: 2px yellow solid; */
+    border: 2px yellow solid;
     height: 1125px;
     display: flex;
     justify-content: flex-end;
@@ -262,7 +262,7 @@ textarea {
 .settings {
     background-color: black;
     z-index: 1;
-    /* border: 2px white solid; */
+    border: 2px white solid;
     width: 0px;
     height: 1050px;
     /* font-weight: bold; */

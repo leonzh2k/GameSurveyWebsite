@@ -48,7 +48,7 @@ body {
 
 
 .left-column {
-    /* border: 2px red solid; */
+    border: 2px red solid;
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
@@ -60,7 +60,7 @@ body {
     max-height: 1270px;
     max-width: 100%;
     max-height: 100%;
-    /* border: 2px blue solid; */
+    border: 2px blue solid;
     display: grid;
     align-content: center;
     grid-template-columns: 225px 1050px 225px;
@@ -172,7 +172,7 @@ body {
     color: black;
     opacity: 0.90;
     border-radius: 10px;
-    /* border: 2px green solid; */
+    border: 2px green solid;
     display: inline-block;
     width: 1050px;
     max-height: 1270px;
@@ -236,7 +236,7 @@ body {
 }
 
 .settings-column {
-    /* border: 2px yellow solid; */
+    border: 2px yellow solid;
     /* height: 1125px; */
     display: flex;
     justify-content: flex-end;

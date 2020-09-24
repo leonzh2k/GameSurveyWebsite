@@ -4,10 +4,10 @@ function() {
     try {
         checkSettings();
         checkNightMode();
-        getDefaultFormHeight();
+        // getDefaultFormHeight();
         //calling adjustFooter without timeout results in the default height value output, not what we want
         //we want the height value after everything has loaded properly
-        setTimeout(() => { adjustFooter(); }, 100);
+        // setTimeout(() => { adjustFooter(); }, 100);
     }
     catch(err) {
         alert(err.message);
@@ -57,28 +57,28 @@ function checkSettings() {
 }
 
 
-function getDefaultFormHeight() {
-    let form = document.querySelector('.form');
-    let formHeight = window.getComputedStyle(form, null).getPropertyValue("height");
-    localStorage.setItem("defaultFormHeight", formHeight);
-}
-//adjusts size of gray footer based on form size
-//get default form height and current form height, and their difference is the footer height
-function adjustFooter() {
-    try {
-        let form = document.querySelector('.form');
-        let currentFormHeight = window.getComputedStyle(form, null).getPropertyValue("height");
-        // alert(currentFormHeight);
-        let defaultFormHeight = Number(localStorage.getItem("defaultFormHeight").replace('px', ""));
-        currentFormHeight = Number(currentFormHeight.replace('px', ""))
-        let footerHeight = String(currentFormHeight - defaultFormHeight) + "px";
-        document.querySelector('.gray-footer').style.height = footerHeight;
-    }
-    catch(err) {
-        alert(err.message);
-    }
+// function getDefaultFormHeight() {
+//     let form = document.querySelector('.form');
+//     let formHeight = window.getComputedStyle(form, null).getPropertyValue("height");
+//     localStorage.setItem("defaultFormHeight", formHeight);
+// }
+// //adjusts size of gray footer based on form size
+// //get default form height and current form height, and their difference is the footer height
+// function adjustFooter() {
+//     try {
+//         let form = document.querySelector('.form');
+//         let currentFormHeight = window.getComputedStyle(form, null).getPropertyValue("height");
+//         // alert(currentFormHeight);
+//         let defaultFormHeight = Number(localStorage.getItem("defaultFormHeight").replace('px', ""));
+//         currentFormHeight = Number(currentFormHeight.replace('px', ""))
+//         let footerHeight = String(currentFormHeight - defaultFormHeight) + "px";
+//         document.querySelector('.gray-footer').style.height = footerHeight;
+//     }
+//     catch(err) {
+//         alert(err.message);
+//     }
     
-}
+// }
 //function that checks if night mode was active before switching to another page,
 //if yes, then night mode is also enabled on current page
 function checkNightMode() {

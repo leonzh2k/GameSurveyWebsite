@@ -123,8 +123,8 @@ textarea {
     /* grid-template-rows: 1065px 60px; */
 }
 
-.gray-footer{
-    /* border: 2px orange solid; */
+/* .gray-footer{
+    border: 2px orange solid;
     background-color: rgb(53, 53, 53);
     position: absolute;
     top: 1065px;
@@ -133,12 +133,12 @@ textarea {
     height: 80px;
     display: block;
     z-index: -2;
-    /* grid-row-start: 2;
-    grid-row-end: 2; */
+    grid-row-start: 2;
+    grid-row-end: 2;
     padding-right: 1000px;
     padding-left:  100px;
 
-}
+} */
 
 .left-column {
     border: 2px red solid;

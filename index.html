@@ -12,121 +12,116 @@
         <div class="left-column">
 
         </div>
-        <div class="form-area">
-            <header class="form-header">
-                <h1>Totally Official TF2 Survey</h1>
-            </header>    
-            <div class="form">
+        <div class="form">
+            <form id="surveyForm" action="confirm.html" method="GET" autocomplete="off">
+                <header class="form-header">
+                    <h1>Totally Official TF2 Survey</h1>
+                </header>    
+                <!--QUESTION 1-->
+                <section class="f2p?">
+                    <span><h3><span class="question-number">1.</span> Are you a F2P (Free 2 Play) or Premium player?</h3></span>
+                    <input type="radio" name="f2p?" id="f2p" value="F2P" required="true">
+                    <label for="f2p">F2P</label>
+                    <input type="radio" name="f2p?" id="premium" value="Premium" required="true" >
+                    <label for="premium">Premium</label>
+                </section>
+
+                <!--QUESTION 2-->
+                <section class="hours">
+                    <label for="hours"><h3><span class="question-number">2.</span> How many hours have you played? (max. 50000)</h3></label>
+                    <input type="number" id="hours" name="hours" min="0" max="50000" required="true">
+                </section>
+
+                <!--QUESTION 3-->
+                <section class="proficiency">
+                    <label for="proficiency"><h3><span class="question-number">3.</span> Rate how proficient you think you are at the game (scale from 1 - 10)</h3></label>
+                    Terrible (1) <input type="range" id="proficiency" name="proficiency" value="5" min="1" max="10" required="true" > Invite (10)
+                </section>
+
+                <!--QUESTION 4-->
+                <section class="profatclasses">
+                    <span><h3><span class="question-number">4.</span> Which classes do you think you are decent at?</h3></span>
+                    <label for="scout">Scout</label>
+                    <input type="checkbox" name="profclasses" id="scout" value="Scout">
+                    <label for="soldier">Soldier</label>
+                    <input type="checkbox" name="profclasses" id="soldier" value="Soldier">
+                    <label for="pyro">Pyro</label>
+                    <input type="checkbox" name="profclasses" id="pyro" value="Pyro">
+                    <label for="demoman">Demoman</label>
+                    <input type="checkbox" name="profclasses" id="demoman" value="Demoman">
+                    <label for="heavy">Heavy</label>
+                    <input type="checkbox" name="profclasses" id="heavy" value="Heavy">
+                    <label for="engineer">Engineer</label>
+                    <input type="checkbox" name="profclasses" id="engineer" value="Engineer">
+                    <label for="spy">Spy</label>
+                    <input type="checkbox" name="profclasses" id="spy" value="Spy">
+                    <label for="sniper">Sniper</label>
+                    <input type="checkbox" name="profclasses" id="sniper" value="Sniper">
+                    <label for="medic">Medic</label>
+                    <input type="checkbox" name="profclasses" id="medic" value="Medic">
+                </section>
+
+                <!--QUESTION 5-->
+                <section class="favclass">
+                    <label for="favclass"><h3><span class="question-number">5.</span> Who is your favorite class?</h3></label>
+                    <select name="favclass" id="favclass" >
+                        <option value="Scout">Scout</option>
+                        <option value="Soldier">Soldier</option>
+                        <option value="Pyro">Pyro</option>
+                        <option value="Demoman">Demoman</option>
+                        <option value="Heavy">Heavy</option>
+                        <option value="Engineer">Engineer</option>
+                        <option value="Spy">Spy</option>
+                        <option value="Sniper">Sniper</option>
+                        <option value="Medic">Medic</option>
+                    </select>
+                </section>
                 
-                <form id="surveyForm" action="confirm.html" method="GET" autocomplete="off">
+                <!--QUESTION 6-->
+                <section class="whyfavclass">
+                    <label for="whyfavclass"><h4><span class="question-number">6.</span> Why are they your favorite class? (max. 200 characters)</h4></label>
+                    <textarea id="whyfavclass" name="whyfavclass" rows="3" cols="40" maxlength="200" placeholder="Click and drag bottom right for more space!" required="true"></textarea>
+                </section>
+                
+                <!--QUESTION 7-->
+                <section class="favmap">
+                    <label for="favmap"><h3><span class="question-number">7.</span> What is your favorite map in the game? (max. 30 characters)</h3></label>
+                    <input list="favmaps" id="favmap" name="favmap" minlength="3" maxlength="30" required="true" >
+                    <datalist id="favmaps">
+                        <option value="Dustbowl">Dustbowl</option>
+                        <option value="2Fort">2Fort</option>
+                        <option value="Hydro">Hydro</option>
+                        <option value="Powerhouse"></option>
+                        <option value="Granary"></option>
+                        <option value="Harvest"></option>
+                        <option value="Doomsday"></option>
+                        <option value="Mossrock"></option>
+                    </datalist>
+                </section>
+                
+                <!--QUESTION 8-->
+                <section class="whyfavmap">
+                    <label for="whyfavmap"><h4><span class="question-number">8.</span> Why is it your favorite map? (max. 200 characters)</h4></label>
+                    <textarea id="whyfavmap" name="whyfavmap" rows="3" cols="40" maxlength="200" placeholder="Click and drag bottom right for more space!" required="true"></textarea>
+                </section>
 
-                    <!--QUESTION 1-->
-                    <section class="f2p?">
-                        <span><h3><span class="question-number">1.</span> Are you a F2P (Free 2 Play) or Premium player?</h3></span>
-                        <input type="radio" name="f2p?" id="f2p" value="F2P" required="true">
-                        <label for="f2p">F2P</label>
-                        <input type="radio" name="f2p?" id="premium" value="Premium" required="true" >
-                        <label for="premium">Premium</label>
-                    </section>
-
-                    <!--QUESTION 2-->
-                    <section class="hours">
-                        <label for="hours"><h3><span class="question-number">2.</span> How many hours have you played? (max. 50000)</h3></label>
-                        <input type="number" id="hours" name="hours" min="0" max="50000" required="true">
-                    </section>
-
-                    <!--QUESTION 3-->
-                    <section class="proficiency">
-                        <label for="proficiency"><h3><span class="question-number">3.</span> Rate how proficient you think you are at the game (scale from 1 - 10)</h3></label>
-                        Terrible (1) <input type="range" id="proficiency" name="proficiency" value="5" min="1" max="10" required="true" > Invite (10)
-                    </section>
-
-                    <!--QUESTION 4-->
-                    <section class="profatclasses">
-                        <span><h3><span class="question-number">4.</span> Which classes do you think you are decent at?</h3></span>
-                        <label for="scout">Scout</label>
-                        <input type="checkbox" name="profclasses" id="scout" value="Scout">
-                        <label for="soldier">Soldier</label>
-                        <input type="checkbox" name="profclasses" id="soldier" value="Soldier">
-                        <label for="pyro">Pyro</label>
-                        <input type="checkbox" name="profclasses" id="pyro" value="Pyro">
-                        <label for="demoman">Demoman</label>
-                        <input type="checkbox" name="profclasses" id="demoman" value="Demoman">
-                        <label for="heavy">Heavy</label>
-                        <input type="checkbox" name="profclasses" id="heavy" value="Heavy">
-                        <label for="engineer">Engineer</label>
-                        <input type="checkbox" name="profclasses" id="engineer" value="Engineer">
-                        <label for="spy">Spy</label>
-                        <input type="checkbox" name="profclasses" id="spy" value="Spy">
-                        <label for="sniper">Sniper</label>
-                        <input type="checkbox" name="profclasses" id="sniper" value="Sniper">
-                        <label for="medic">Medic</label>
-                        <input type="checkbox" name="profclasses" id="medic" value="Medic">
-                    </section>
-
-                    <!--QUESTION 5-->
-                    <section class="favclass">
-                        <label for="favclass"><h3><span class="question-number">5.</span> Who is your favorite class?</h3></label>
-                        <select name="favclass" id="favclass" >
-                            <option value="Scout">Scout</option>
-                            <option value="Soldier">Soldier</option>
-                            <option value="Pyro">Pyro</option>
-                            <option value="Demoman">Demoman</option>
-                            <option value="Heavy">Heavy</option>
-                            <option value="Engineer">Engineer</option>
-                            <option value="Spy">Spy</option>
-                            <option value="Sniper">Sniper</option>
-                            <option value="Medic">Medic</option>
-                        </select>
-                    </section>
-                    
-                    <!--QUESTION 6-->
-                    <section class="whyfavclass">
-                        <label for="whyfavclass"><h4><span class="question-number">6.</span> Why are they your favorite class? (max. 200 characters)</h4></label>
-                      <textarea id="whyfavclass" name="whyfavclass" rows="3" cols="40" maxlength="200" placeholder="Click and drag bottom right for more space!" required="true"></textarea>
-                    </section>
-                    
-                    <!--QUESTION 7-->
-                    <section class="favmap">
-                        <label for="favmap"><h3><span class="question-number">7.</span> What is your favorite map in the game? (max. 30 characters)</h3></label>
-                        <input list="favmaps" id="favmap" name="favmap" minlength="3" maxlength="30" required="true" >
-                        <datalist id="favmaps">
-                            <option value="Dustbowl">Dustbowl</option>
-                            <option value="2Fort">2Fort</option>
-                            <option value="Hydro">Hydro</option>
-                            <option value="Powerhouse"></option>
-                            <option value="Granary"></option>
-                            <option value="Harvest"></option>
-                            <option value="Doomsday"></option>
-                            <option value="Mossrock"></option>
-                        </datalist>
-                    </section>
-                    
-                    <!--QUESTION 8-->
-                    <section class="whyfavmap">
-                        <label for="whyfavmap"><h4><span class="question-number">8.</span> Why is it your favorite map? (max. 200 characters)</h4></label>
-                        <textarea id="whyfavmap" name="whyfavmap" rows="3" cols="40" maxlength="200" placeholder="Click and drag bottom right for more space!" required="true"></textarea>
-                    </section>
-
-                    <!--QUESTION 9-->
-                    <section class="favhat">
-                        <label for="favhat"><h3><span class="question-number">9.</span> What is your favorite cosmetic in the game? (max. 50 characters)</h3></label>
-                        <input type="text" id="favhat" name="favhat" maxlength="50" required="true">
-                    </section>
-                    
-                    <!--QUESTION 10-->
-                    <section class="whyfavhat">
-                        <label for="whyfavhat"><h4><span class="question-number">10.</span> Why is it your favorite cosmetic? (max. 200 characters)</h4></label>
-                      <textarea id="whyfavhat" name="whyfavhat" rows="3" cols="40" maxlength="200" placeholder="Click and drag bottom right for more space!" required="true"></textarea>
-                    </section>
-                    
-                    <div class="submit" id="submit">
-                        <button class="button" id="submit" type="submit"  onclick="sendFormData()">Confirm</button>
-                    </div>
-            
-                    <!----other questions to ask: favorite weapon, what you want to nerf/buff-->
-                </form>
-            </div>
+                <!--QUESTION 9-->
+                <section class="favhat">
+                    <label for="favhat"><h3><span class="question-number">9.</span> What is your favorite cosmetic in the game? (max. 50 characters)</h3></label>
+                    <input type="text" id="favhat" name="favhat" maxlength="50" required="true">
+                </section>
+                
+                <!--QUESTION 10-->
+                <section class="whyfavhat">
+                    <label for="whyfavhat"><h4><span class="question-number">10.</span> Why is it your favorite cosmetic? (max. 200 characters)</h4></label>
+                    <textarea id="whyfavhat" name="whyfavhat" rows="3" cols="40" maxlength="200" placeholder="Click and drag bottom right for more space!" required="true"></textarea>
+                </section>
+                
+                
+                <button class="button" id="submit" type="submit"  onclick="sendFormData()">Confirm</button>
+        
+                <!----other questions to ask: favorite weapon, what you want to nerf/buff-->
+            </form>
         </div>
         <div class="settings-column">
             <div class="open-settings-button-area">

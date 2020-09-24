@@ -9,8 +9,7 @@ body {
     text-align: left;
     background-image: url("../images/2fort.jpg");
     font-family: Georgia;
-    min-width: 10px;
-    min-height: 10px;
+    max-width: 100%;
 }
 
 datalist, select, option {
@@ -190,9 +189,10 @@ textarea {
 }
 /*Fixed elements fuckup when you zoom in, need to write js to reposition on zoom*/
 .button {
-    top: 670px;
+    top: 1050px;
     left: 1100px;
-    position: fixed;
+    /* position: fixed; */
+    position: absolute;
     height: 60px;
     width: 160px;
     font-family: Georgia;
@@ -221,7 +221,7 @@ textarea {
     align-items: center;
     border-radius: 10px;
     float: right;
-    position: fixed;
+    /* position: fixed; */
     /* right: 100px; */
     z-index: 2;
 }

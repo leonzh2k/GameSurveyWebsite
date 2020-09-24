@@ -14,6 +14,7 @@ body {
     animation-duration: 100s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    max-width: 100%;
 }
 
 /*To slow down fade-in effects, must consider every frame*/
@@ -163,7 +164,7 @@ body {
 .main-content {
     background-color: #1B2124;
     opacity: 0.99;
-    position: fixed;
+    /* position: fixed; */
     border-radius: 10px;
     padding-top: 10px;
     padding-left: 30px;
@@ -233,7 +234,7 @@ body {
     align-items: center;
     border-radius: 10px;
     float: right;
-    position: fixed;
+    /* position: fixed; */
     /* right: 100px; */
     z-index: 2;
 }
@@ -259,7 +260,7 @@ body {
     /* font-weight: bold; */
     display: block;
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     position: fixed;
     /*makes it open from the right for some reason*/
     right: 0;

@@ -246,7 +246,7 @@ body {
     align-items: center;
     border-radius: 10px;
     float: right;
-    position: fixed;
+    /* position: fixed; */
     /* right: 100px; */
     z-index: 2;
 }

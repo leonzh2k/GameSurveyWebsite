@@ -5,7 +5,10 @@
 
 body {
     text-align: left;
-    background: url("../images/2fort.jpg") no-repeat center center fixed;
+    background: url("../images/2fort.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     background-size: cover;
     /* background-color: red; */
     font-family: Georgia;

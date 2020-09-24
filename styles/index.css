@@ -276,22 +276,22 @@ textarea {
     margin-top: -10%;
     transition-property: color, animation;
     transition-duration: 0.2s, 10s;
-    transform-origin: 50% 55%;
+    transform-origin: 53% 53%;
     transition-timing-function: ease-in, linear;
 }
 
 .open-settings-button:hover {
     color: white;
-    animation: spin;
-    animation-duration: 10s;
+    /* animation: spin;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 
-@keyframes spin {
+/* @keyframes spin {
     0%   {transform: rotate(-360deg);}
-} 
+}  */
 
 
 .settings {

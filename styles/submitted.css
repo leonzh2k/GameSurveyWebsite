@@ -8,8 +8,8 @@ h1, p, a {
 
 body {
     /*preloading images*/
-    background-image: url("../images/2fort.jpg"), url("../images/upward.jpg"), url("../images/barnblitz.jpg"), url("../images/harvest.jpg"), url("../images/coldfront.jpg");
-    background-size: 125%;
+    background-image: url("../images/2fort.jpg"), url("../images/upward.jpg"), url("../images/barnblitz.jpg"), url("../images/harvest.jpg"), url("../images/coldfront.jpg") no-repeat center center fixed;
+    background-size: cover;
     font-family: Georgia;
     animation-name: image-gallery;
     animation-duration: 100s;

@@ -9,6 +9,7 @@ body {
     background-color: red;
     font-family: Georgia;
     max-width: 100%;
+    max-height: 100%;
     /* min-width: 10px;
     min-height: 10px; */
 }
@@ -53,6 +54,8 @@ body {
 .grid {
     width: 1500px;
     max-height: 1270px;
+    max-width: 100%;
+    max-height: 100%;
     /* border: 2px blue solid; */
     display: grid;
     align-content: center;

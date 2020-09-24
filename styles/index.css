@@ -10,6 +10,7 @@ body {
     background-image: url("../images/2fort.jpg");
     font-family: Georgia;
     max-width: 100%;
+    max-height: 100%;
 }
 
 datalist, select, option {
@@ -107,9 +108,11 @@ textarea {
 
 
 .grid {
+    max-width: 100%;
+    max-height: 100%;
     width: 1500px;
     height: 1125px;
-    /* border: 2px blue solid; */
+    border: 2px blue solid;
     display: grid;
     align-content: center;
     grid-template-columns: 225px 1050px 225px;

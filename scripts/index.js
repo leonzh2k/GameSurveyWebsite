@@ -30,7 +30,7 @@ function openSettings(animation) {
         document.querySelector(".settings").classList.remove("settings-transition");
         document.querySelector(".night-mode-toggle-slider").classList.remove("slider-transition");
 
-        document.querySelector(".settings").style.width = "300px";
+        document.querySelector(".settings").style.width = "20vw";
         document.querySelector(".open-settings-button-area").style.visibility = "hidden";
         //adding the slide-in-transition class too early actually applies it to the setting element even
         //when openSettings was called before it!!!
@@ -41,7 +41,7 @@ function openSettings(animation) {
     }
     else {
         localStorage.setItem("settingsOpen", "true");
-        document.querySelector(".settings").style.width = "300px";
+        document.querySelector(".settings").style.width = "20vw";
         document.querySelector(".open-settings-button-area").style.visibility = "hidden";
     }
     

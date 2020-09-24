@@ -30,6 +30,8 @@ input {
     font-weight: bold;
     font-family: Helvetica;
     font-size: 16px;
+    /* width: 20%;
+    max-width: 20%; */
     /* color: rgb(223, 223, 223);
     background-color: rgb(85, 85, 85); */
    
@@ -37,12 +39,13 @@ input {
 
 textarea {
     resize: horizontal;
-    max-width: 800px;
-    min-width: 500px;
+    max-width: 80%;
+    min-width: 20%;
     font-weight: bold;
     font-family: Arial;
     font-size: 16px;
-    
+    /* border: 2px black solid; */
+    /* border-radius: 5px; */
     /* color: rgb(223, 223, 223);
     background-color: rgb(85, 85, 85); */
    
@@ -163,8 +166,11 @@ textarea {
     /* //position: absolute;*/
     grid-column-start: 2;
     grid-column-end: 2;
-    /* padding-left: 20px; 
-    margin-left: 30px; */
+    margin-top: -30px;
+    margin-right: 40px;
+    padding-left: 70px; 
+    /* padding-right: 70px; */
+    /* margin-left: 30px;  */
     padding-bottom: 20px;
     color: white;
     background-color:  rgb(53, 53, 53);
@@ -172,18 +178,19 @@ textarea {
     max-width: 100%;
     max-height: 100%;
     width: 100%;
-    float: right;
+    /* float: left; */
     height: 70px;
     /* position: absolute; */
     z-index: 1; 
-    visibility: visible;
+    /* visibility: visible; */
     /* border: 1px orange solid; */
 }
 
 .form-header h1 {
-    display: block;
+    /* display: block; */
     position: relative; 
-    top: -4px;
+    font-size: 2.3vw;
+    top: 25%;
     /* border: 1px red solid; */
 }
 
@@ -196,7 +203,7 @@ textarea {
     color: black;
     /* opacity: 0.95; */
     border-radius: 10px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     /* display: inline-block; */
     
     padding-left: 20px;
@@ -216,18 +223,24 @@ textarea {
 } */
 /*Fixed elements fuckup when you zoom in, need to write js to reposition on zoom*/
 .button {
+    display: flex;
     position: relative;
+    /* display: inline; */
     height: 8vh;
     width: 15%;
     margin-left: 80%;
     font-family: Georgia;
-    font-size: 18px;
+    font-size: 2vw;
     color: white;
     background-color: rgb(18, 105, 204);
     border: 2px rgb(18, 105, 204) solid;
     border-radius: 5px;
     transition-property: background-color border;
     transition-duration: 0.5s;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* justify-items: center; */
 }
 
 .settings-column {
@@ -244,11 +257,13 @@ textarea {
 .open-settings-button-area {
     background-color: black;
     display: flex;
-    height: 60px;
-    width: 60px;
+    height: 4vw;
+    width: 4vw;
+    /* max-height:
+    max-width: */
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 1vw;
     float: right;
     /* position: fixed; */
     /* right: 100px; */
@@ -257,8 +272,8 @@ textarea {
 
 .open-settings-button {
     color: gray;
-    font-size: 50px;
-    margin-top: -6px;
+    font-size: 4vw;
+    margin-top: -10%;
     transition-property: color, animation;
     transition-duration: 0.2s, 10s;
     transform-origin: 50% 55%;
@@ -305,6 +320,7 @@ textarea {
 }
 
 .settings p {
+    font-size: 100%;
     margin-left: 32px;
     display: inline-block;
 }

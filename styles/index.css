@@ -257,8 +257,8 @@ textarea {
 
 .open-settings-button {
     color: gray;
-    font-size: 4vw;
-    margin-top: -10%;
+    font-size: 50px;
+    margin-top: -6px;
     transition-property: color, animation;
     transition-duration: 0.2s, 10s;
     transform-origin: 53% 53%;

@@ -27,7 +27,7 @@ body {
     border: 1px red solid;
     color: rgb(0, 0, 255);
     font-weight: bold;
-    max-height: 25px;
+    max-height: 120vh;
     position: relative;
 }
 
@@ -155,8 +155,7 @@ body {
 .form-header {
     /* height: 50px; */
     border-radius: 10px 10px 0px 0px;
-    /* //border: 1px rgb(53, 53, 53) solid; */
-    /* //position: absolute;*/
+    
     padding-left: 20px; 
     padding-bottom: 20px;
     color: white;
@@ -169,14 +168,16 @@ body {
     position: absolute;
     z-index: 1; 
     visibility: visible;
-    /* border: 1px orange solid; */
+    display: flex;
+    align-items: center;
 }
 
 .form-header h1 {
-    display: block;
-    position: relative; 
-    top: -4px;
-    /* border: 1px red solid; */
+    font-size: 4vh;
+    /* display: block;
+    position: absolute; 
+    margin: 0 auto; */
+    border: 1px red solid;
 }
 
 .form {

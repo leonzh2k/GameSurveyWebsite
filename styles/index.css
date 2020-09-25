@@ -242,20 +242,17 @@ textarea {
 }
 
 .open-settings-button-area {
-    border: 2px red solid;
     background-color: black;
     display: flex;
-    height: 4vw;
-    width: 4vw;
-    /* max-height:
-    max-width: */
+    height: 60px;
+    width: 60px;
     justify-content: center;
     align-items: center;
-    border-radius: 1vw;
+    border-radius: 10px;
     float: right;
     /* position: fixed; */
     /* right: 100px; */
-    z-index: 1;
+    z-index: 2;
 }
 
 .open-settings-button {

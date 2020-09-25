@@ -24,20 +24,25 @@ body {
     max-width: 950px;
     text-overflow: hidden;
     word-wrap: break-word;
-    /* border: 1px red solid; */
+    border: 1px red solid;
     color: rgb(0, 0, 255);
     font-weight: bold;
     max-height: 25px;
+    position: relative;
 }
 
 .answer-long {
+    font-size: 100%;
     max-width: 950px;
     text-overflow: hidden;
     word-wrap: break-word;
-    /* border: 1px red solid; */
+    border: 1px red solid;
     color: rgb(0, 0, 255);
     font-weight: bold;
-    max-height: 80px;
+    max-height: 120vh;
+    position: relative;
+    /* margin-bottom: 10vh; */
+    
 }
 
 .question-number {
@@ -284,11 +289,11 @@ body {
 
 .open-settings-button:hover {
     color: white;
-    animation: spin;
+    /* animation: spin;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 
 @keyframes spin {
@@ -305,7 +310,7 @@ body {
     /* font-weight: bold; */
     display: block;
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     position: fixed;
     /*makes it open from the right for some reason*/
     right: 0;

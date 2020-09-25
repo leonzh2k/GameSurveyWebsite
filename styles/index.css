@@ -145,7 +145,6 @@ textarea {
 
 .left-column {
     border: 2px red solid;
-    /* height: 1125px; */
     width: 100%;
     height: 100%;
     max-width: 100%;
@@ -154,9 +153,9 @@ textarea {
 }
 
 .form-area {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    border: 2px white solid;
+    grid-column: 2 / 2;
+    border: 2px rgb(255, 255, 255) solid;
+    position: relative;
 }
 
 .form-header {
@@ -164,23 +163,19 @@ textarea {
     border-radius: 10px 10px 0px 0px;
     /* //border: 1px rgb(53, 53, 53) solid; */
     /* //position: absolute;*/
-    grid-column-start: 2;
-    grid-column-end: 2;
-    margin-top: -30px;
-    margin-right: 40px;
-    padding-left: 70px; 
-    /* padding-right: 70px; */
-    /* margin-left: 30px;  */
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 50%; */
+    padding-left: 20px; 
     padding-bottom: 20px;
     color: white;
     background-color:  rgb(53, 53, 53);
     opacity: 1;
-    max-width: 100%;
-    max-height: 100%;
     width: 100%;
-    /* float: left; */
     height: 70px;
-    /* position: absolute; */
+    left: 0vh;
+    top: 0vh;
+    position: absolute;
     z-index: 1; 
     /* visibility: visible; */
     /* border: 1px orange solid; */
@@ -195,6 +190,7 @@ textarea {
 }
 
 .form {
+    border: 2px red solid;
     max-width: 100%;
     max-height: 100%;
     width: 100%;
@@ -205,22 +201,13 @@ textarea {
     border-radius: 10px;
     /* margin-top: 50px; */
     /* display: inline-block; */
-    
+    grid-column: 2 / 2;
     padding-left: 20px;
-    padding-top: 10px;
+    padding-top: 60px;
     /* visibility: visible; */
-    z-index: -1;
+    z-index: 0;
 }
 
-
-/* .submit {
-    padding-top: 10px;
-}
-
-#submit {
-    font-weight: normal;
-    z-index: 2;
-} */
 /*Fixed elements fuckup when you zoom in, need to write js to reposition on zoom*/
 .button {
     display: flex;
@@ -255,6 +242,7 @@ textarea {
 }
 
 .open-settings-button-area {
+    border: 2px red solid;
     background-color: black;
     display: flex;
     height: 4vw;
@@ -267,7 +255,7 @@ textarea {
     float: right;
     /* position: fixed; */
     /* right: 100px; */
-    z-index: 2;
+    z-index: 1;
 }
 
 .open-settings-button {
@@ -296,7 +284,7 @@ textarea {
 
 .settings {
     background-color: black;
-    z-index: 1;
+    z-index: 3;
     /* border: 2px white solid; */
     width: 0px;
     height: 100%;

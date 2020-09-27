@@ -6,6 +6,7 @@
 
 
 body {
+    margin: 0 auto;
     text-align: left;
     background-image: url("../images/2fort.jpg");
     background-repeat: no-repeat;
@@ -115,6 +116,7 @@ textarea {
 
 
 .grid {
+    margin: 0 auto;
     max-width: 100%;
     max-height: 100%;
     width: 100%;
@@ -152,20 +154,21 @@ textarea {
     grid-column: 1 / 1;
 }
 
-.form-area {
-    grid-column: 2 / 2;
+.form-wrapper {
+    display: flex;
+    justify-content: center;
     border: 2px rgb(255, 255, 255) solid;
-    position: relative;
+    grid-column: 2 / 2;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .form-header {
-    /* height: 50px; */
     border-radius: 10px 10px 0px 0px;
-    /* //border: 1px rgb(53, 53, 53) solid; */
-    /* //position: absolute;*/
     display: flex;
     align-items: center;
-    /* margin-bottom: 50%; */
     padding-left: 20px; 
     padding-bottom: 20px;
     color: white;
@@ -184,14 +187,15 @@ textarea {
 .form-header h1 {
     /* display: block; */
     position: relative; 
-    font-size: 2.3vw;
+    font-size: 200%;
     top: 25%;
     /* border: 1px red solid; */
 }
 
 .form {
+    margin: 0 auto;
     border: 2px red solid;
-    max-width: 100%;
+    max-width: 1050px;
     max-height: 100%;
     width: 100%;
     height: 100%;
@@ -201,9 +205,10 @@ textarea {
     border-radius: 10px;
     /* margin-top: 50px; */
     /* display: inline-block; */
-    grid-column: 2 / 2;
     padding-left: 20px;
     padding-top: 60px;
+    /*Position: relative allows you to control absolutely positioned children and keep them inside the parent*/
+    position: relative;
     /* visibility: visible; */
     z-index: 0;
 }
@@ -213,11 +218,12 @@ textarea {
     display: flex;
     position: relative;
     /* display: inline; */
-    height: 8vh;
-    width: 15%;
-    margin-left: 80%;
+    height: 60px;
+    width: 100px;
+    margin-left: 900px;
+    margin-bottom: 40px;
     font-family: Georgia;
-    font-size: 2vw;
+    font-size: 100%;
     color: white;
     background-color: rgb(18, 105, 204);
     border: 2px rgb(18, 105, 204) solid;

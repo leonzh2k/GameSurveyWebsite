@@ -124,7 +124,7 @@ textarea {
     border: 2px blue solid;
     display: grid;
     align-content: center;
-    grid-template-columns: 15% 70% 15%;
+    grid-template-columns: 0.01% 99.98% 0.01%;
     /* grid-template-rows: 1065px 60px; */
 }
 
@@ -250,21 +250,21 @@ textarea {
 .open-settings-button-area {
     background-color: black;
     display: flex;
-    height: 60px;
-    width: 60px;
+    height: 3.5vw;
+    width: 3.5vw;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 1vw;
     float: right;
-    /* position: fixed; */
+    position: fixed;
     /* right: 100px; */
     z-index: 2;
 }
 
 .open-settings-button {
     color: gray;
-    font-size: 50px;
-    margin-top: -6px;
+    font-size: 3.5vw;
+    margin-top: -10%;
     transition-property: color, animation;
     transition-duration: 0.2s, 10s;
     transform-origin: 53% 53%;

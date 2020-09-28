@@ -73,7 +73,7 @@ body {
     border: 2px blue solid;
     display: grid;
     align-content: center;
-    grid-template-columns: 15% 70% 15%;
+    grid-template-columns: 0.01% 99.98% 0.01%;
 }
 
 /* .gray-footer{
@@ -165,7 +165,6 @@ body {
     display: flex;
     align-items: center;
     padding-left: 20px; 
-    padding-bottom: 20px;
     color: white;
     background-color:  rgb(53, 53, 53);
     opacity: 1;
@@ -180,8 +179,12 @@ body {
 }
 
 .form-header h1 {
+    display: flex;
+    justify-content: center;
     font-size: 200%;
-    /* display: block;
+    /* display: block; */
+    vertical-align: middle;
+    /*
     position: absolute; 
     margin: 0 auto; */
     border: 1px red solid;
@@ -275,24 +278,24 @@ body {
 .open-settings-button-area {
     background-color: black;
     display: flex;
-    height: 60px;
-    width: 60px;
+    height: 3.5vw;
+    width: 3.5vw;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 1vw;
     float: right;
-    /* position: fixed; */
+    position: fixed;
     /* right: 100px; */
     z-index: 2;
 }
 
 .open-settings-button {
     color: gray;
-    font-size: 50px;
-    margin-top: -6px;
+    font-size: 3.5vw;
+    margin-top: -10%;
     transition-property: color, animation;
     transition-duration: 0.2s, 10s;
-    transform-origin: 50% 55%;
+    transform-origin: 53% 53%;
     transition-timing-function: ease-in, linear;
 }
 

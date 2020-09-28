@@ -52,6 +52,8 @@ textarea {
    
 }
 
+
+
 .question-number {
     font-size: 24px;
 }
@@ -193,6 +195,8 @@ textarea {
 }
 
 .form {
+    /* display: flex; */
+
     margin: 0 auto;
     border: 2px red solid;
     max-width: 1050px;
@@ -207,6 +211,7 @@ textarea {
     /* display: inline-block; */
     padding-left: 20px;
     padding-top: 60px;
+    /* padding-bottom: 20px; */
     /*Position: relative allows you to control absolutely positioned children and keep them inside the parent*/
     position: relative;
     /* visibility: visible; */
@@ -214,13 +219,14 @@ textarea {
 }
 
 /*Fixed elements fuckup when you zoom in, need to write js to reposition on zoom*/
-.button {
+#submit-button {
+    
     display: flex;
-    position: relative;
-    /* display: inline; */
+    position: relative; 
+    display: block;
     height: 60px;
-    width: 100px;
-    margin-left: 900px;
+    width: 120px;
+    margin-left: 85%;
     margin-bottom: 40px;
     font-family: Georgia;
     font-size: 100%;
@@ -236,6 +242,50 @@ textarea {
     /* justify-items: center; */
 }
 
+
+@media screen and (max-width: 900px) { 
+    #submit-button {
+        margin-left: 80%;
+        /* position: absolute; */
+        /* justify-items: center; */
+    }
+ }
+
+@media screen and (max-width: 800px) { 
+    #submit-button {
+        margin-left: 77%;
+        /* position: absolute; */
+        /* justify-items: center; */
+    }
+ }
+
+ @media screen and (max-width: 700px) { 
+    #submit-button {
+        margin-left: 72%;
+        /* position: absolute; */
+        /* justify-items: center; */
+    }
+ }
+
+@media screen and (max-width: 600px) { 
+    #submit-button {
+        margin: auto;
+        left: -10px;
+        /* position: absolute; */
+        /* justify-items: center; */
+    }
+    .form {
+        padding-bottom: 30px;
+        /* position: absolute; */
+        /* justify-items: center; */
+    }
+    #whyfavhat {
+        margin-bottom: 30px;
+    }
+ }
+
+
+
 .settings-column {
     border: 2px yellow solid;
     width: 100%;
@@ -250,25 +300,39 @@ textarea {
 .open-settings-button-area {
     background-color: black;
     display: flex;
-    height: 3.5vw;
-    width: 3.5vw;
+    height: 60px;
+    width: 60px;
     justify-content: center;
     align-items: center;
     border-radius: 1vw;
     float: right;
     position: fixed;
+    right: 10px;
     /* right: 100px; */
     z-index: 2;
 }
 
+
+
 .open-settings-button {
     color: gray;
-    font-size: 3.5vw;
+    font-size: 60px;
     margin-top: -10%;
     transition-property: color, animation;
     transition-duration: 0.2s, 10s;
     transform-origin: 53% 53%;
     transition-timing-function: ease-in, linear;
+}
+
+@media screen and (max-width: 700px) { 
+    .open-settings-button-area {
+        width: 40px;
+        height: 40px;
+    }
+
+    .open-settings-button {
+        font-size: 40px;
+    }
 }
 
 .open-settings-button:hover {
@@ -416,7 +480,7 @@ textarea {
 
 /* reactive section */
 
-.button:hover {
+#submit-button:hover {
     background-color: rgb(14, 84, 163);
     border: rgb(14, 84, 163);
 }

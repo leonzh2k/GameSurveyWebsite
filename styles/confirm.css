@@ -229,12 +229,28 @@ body {
 }
 
 .nav {
+    display: flex;
+    position: relative; 
+    display: block;
     /* border: 2px solid red; */
-    display: inline-block;
     margin-bottom: 30px;
     margin-top: 20px;
-    position: relative;
+    width: 264px;
+    justify-content: center;
     /* bottom: -370px; */
+}
+
+@media screen and (max-width: 1000px) { 
+    .nav {
+        margin: auto;
+        left: -9px;
+    }
+    .form {
+        padding-bottom: 40px;
+    }
+    .whyfavhat {
+        padding-bottom: 20px;
+    }
 }
 
 .submit {

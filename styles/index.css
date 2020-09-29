@@ -140,13 +140,13 @@ textarea {
         max-width: 93%;
         /* min-width: 45%; */
     }
-    /* #favmap {
-        width: 280px;
+    #favmap {
+        width: 90%;
     }
     
     #favhat {
-        width: 280px;
-    } */
+        width: 90%;
+    }
     
 }
 
@@ -156,11 +156,11 @@ textarea {
         /* min-width: 45%; */
     }
     #favmap {
-        width: 280px;
+        width: 90%;
     }
     
     #favhat {
-        width: 280px;
+        width: 90%;
     }
     
 }
@@ -171,11 +171,11 @@ textarea {
         /* min-width: 45%; */
     }
     #favmap {
-        width: 220px;
+        width: 90%;
     }
     
     #favhat {
-        width: 220px;
+        width: 90%;
     }
     
 }

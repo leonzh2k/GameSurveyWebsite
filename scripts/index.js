@@ -7,6 +7,7 @@ window.onload=function(){
     try {
         checkSettings();
         checkNightMode();
+        checkTextAreaSize();
         refillForm();
     }
     catch(err) {
@@ -18,8 +19,10 @@ window.onload=function(){
 window.onbeforeunload = function() {
     localStorage.setItem("reloaded", "true");
     sendFormData();
+    saveTextAreaSize();
     return null;
 }
+
 
 
 function openSettings(animation) {
@@ -160,8 +163,28 @@ function toggleNightMode() {
     }
 }
 
+function saveTextAreaSize() {
+    let textareas = document.querySelectorAll("textarea");
+    localStorage.setItem("firstTextAreaWidth", textareas[0].style.width);
+    localStorage.setItem("firstTextAreaHeight", textareas[0].style.height);
+    localStorage.setItem("secondTextAreaWidth", textareas[1].style.width);
+    localStorage.setItem("secondTextAreaHeight", textareas[1].style.height);
+    localStorage.setItem("thirdTextAreaWidth", textareas[2].style.width);
+    localStorage.setItem("thirdTextAreaHeight", textareas[2].style.height);
+    return;
+}
 
+function checkTextAreaSize() {
+    let textareas = document.querySelectorAll("textarea");
+    textareas[0].style.width = localStorage.getItem("firstTextAreaWidth");
+    textareas[0].style.height = localStorage.getItem("firstTextAreaHeight");
+    textareas[1].style.width = localStorage.getItem("secondTextAreaWidth");
+    textareas[1].style.height = localStorage.getItem("secondTextAreaHeight");
+    textareas[2].style.width = localStorage.getItem("thirdTextAreaWidth");
+    textareas[2].style.height = localStorage.getItem("thirdTextAreaHeight");
 
+    return;
+}
 
 
 
@@ -210,6 +233,14 @@ function clearLocalStorage() {
 function clearFormFields() {
     try {
         document.getElementById("surveyForm").reset();
+        //Resets form textarea width and height to defaults
+        let textareas = document.querySelectorAll("textarea");
+        textareas[0].style.width = "60%";
+        textareas[0].style.height = "70px"; 
+        textareas[1].style.width = "60%";
+        textareas[1].style.height = "70px";
+        textareas[2].style.width = "60%";
+        textareas[2].style.height = "70px";
     }
     catch(err) {
         alert(err.message)

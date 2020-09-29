@@ -1,9 +1,12 @@
 Website Description
 
-A survey about the game Team Fortress 2, made with HTML, CSS, and JavaScript
+A survey about the game Team Fortress 2, made with Vanilla HTML, CSS, and JavaScript
 
 Features:
 
+
+Mobile Support
+Responsive
 Form Validation <br />
 Night Mode <br />
 Saves Form Input On page reload/close/change <br />
@@ -13,6 +16,5 @@ Navigation feature to bypass form validation for those who want to explore the s
 
 Features to Implement:
 
-Responsive Web Design <br />
-Mobile Support <br />
+PHP to send results of survey to email addresses
  

@@ -135,50 +135,24 @@ textarea {
     } */
 }
 
-@media screen and (max-width: 400px) { 
+@media screen and (max-width: 459px) { 
     textarea {
         max-width: 93%;
         /* min-width: 45%; */
     }
     #favmap {
-        width: 80%;
+        width: 93%;
     }
     
     #favhat {
-        width: 80%;
+        width: 93%;
     }
     
 }
 
-@media screen and (max-width: 380px) { 
-    textarea {
-        max-width: 93%;
-        /* min-width: 45%; */
-    }
-    #favmap {
-        width: 80%;
-    }
-    
-    #favhat {
-        width: 80%;
-    }
-    
-}
 
-@media screen and (max-width:375px) { 
-    textarea {
-        max-width: 93%;
-        /* min-width: 45%; */
-    }
-    #favmap {
-        width: 80%;
-    }
-    
-    #favhat {
-        width: 80%;
-    }
-    
-}
+
+
 
 .question-number {
     font-size: 24px;

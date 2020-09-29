@@ -130,7 +130,6 @@ textarea {
         max-width: 93%;
         /* min-width: 45%; */
     }
-    
     /* textarea::placeholder {
         visibility: hidden;
     } */
@@ -141,12 +140,27 @@ textarea {
         max-width: 93%;
         /* min-width: 45%; */
     }
-    #favmap {
-        width: 300px;
+    /* #favmap {
+        width: 280px;
     }
     
     #favhat {
-        width: 300px;
+        width: 280px;
+    } */
+    
+}
+
+@media screen and (max-width: 380px) { 
+    textarea {
+        max-width: 93%;
+        /* min-width: 45%; */
+    }
+    #favmap {
+        width: 280px;
+    }
+    
+    #favhat {
+        width: 280px;
     }
     
 }
@@ -157,11 +171,11 @@ textarea {
         /* min-width: 45%; */
     }
     #favmap {
-        width: 200px;
+        width: 240px;
     }
     
     #favhat {
-        width: 200px;
+        width: 240px;
     }
     
 }

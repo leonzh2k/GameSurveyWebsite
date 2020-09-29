@@ -230,7 +230,13 @@ body {
     }
 }
 
-
+.form .div-line {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    border-top: 2px rgb(51, 51, 51) dotted;
+    width: 100%;
+}
 .form {
     /* margin: 0 auto; */
     margin-top: 5px;

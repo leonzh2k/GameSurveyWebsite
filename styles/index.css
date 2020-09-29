@@ -151,17 +151,17 @@ textarea {
     
 }
 
-@media screen and (max-width: 350px) { 
+@media screen and (max-width:375px) { 
     textarea {
         max-width: 93%;
         /* min-width: 45%; */
     }
     #favmap {
-        width: 245px;
+        width: 200px;
     }
     
     #favhat {
-        width: 245px;
+        width: 200px;
     }
     
 }

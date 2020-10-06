@@ -99,9 +99,10 @@
 
                 <div id="night-mode-setting">
                     <p>Night Mode</p>
-                    <input class="night-mode-toggle-checkbox" type="checkbox" id="nightmode-toggle">
-                    <label class="night-mode-toggle-slider-area" for="nightmode-toggle" onclick="toggleNightMode()"></label>
-                    <label class="night-mode-toggle-slider slider-transition" for="nightmode-toggle" onclick="toggleNightMode()"></label>
+                    <!-- <input class="night-mode-toggle-checkbox" type="checkbox" id="nightmode-toggle"> -->
+                    <div class="night-mode-toggle-slider-area" onclick="toggleNightMode()">
+                        <div class="night-mode-toggle-slider slider-transition"></div>
+                    </div>
                     <img src="./images/sun-svgrepo-com.svg" id="img-sun"/>
                     <img src="./images/moon-svgrepo-com.svg" id="img-moon"/>
                 </div>
@@ -109,19 +110,29 @@
                 <div class="div-line"></div>
 
                 <div id="clear-storage-setting">
-                    <p>Clear Local Storage <span class="warning-symbol">&#9888;</span></p>
+                    <div id="clear-storage-header"><p>Clear Local Storage <span class="warning-symbol">&#9888;</span></p></div>
                     <div class="warning-description">
-                        <p>
-                            Warning: this will clear all <br>
-                            saved form input.  <br>
-                        </p>
-                        <button class="clear-form-input-button" onclick="clearFormInput()">Clear</button>
-                        <p>
-                            Warning: this will clear all <br>
-                            saved form input as well as  <br>
-                            any display preferences.
-                        </p>
-                        <button class="clear-all-button" onclick="clearLocalStorage()">Clear All</button>
+                        <div id="clear-form-input-setting">
+                            <p>
+                                Warning: this will <br> 
+                                clear all saved form <br>
+                                input.
+                            </p>
+                            <button class="clear-form-input-button" onclick="clearFormInput()">Clear</button>
+                        </div>
+                        
+                        <div id="clear-all-setting">
+                            <p>
+                                Warning: this will <br>  
+                                clear all saved form <br>
+                                input as well as any <br>
+                                display preferences.
+                                
+                            </p>
+                            <button class="clear-all-button" onclick="clearLocalStorage()">Clear All</button>
+                        </div>
+                        
+                        
                     </div>
                 </div>
                 

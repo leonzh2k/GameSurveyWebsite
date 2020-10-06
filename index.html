@@ -43,57 +43,64 @@
                     <!--QUESTION 4-->
                     <section class="profatclasses">
                         <span><h3><span class="question-number">4.</span> Which classes do you think you are decent at?</h3></span>
-                        <div class="class-wrapper">
-                            <label for="scout">Scout</label>
-                            <input type="checkbox" name="profclasses" id="scout" value="Scout">
-                        </div>
-                        <div class="class-wrapper">
-                            <label for="soldier">Soldier</label>
-                            <input type="checkbox" name="profclasses" id="soldier" value="Soldier">
-                        </div>
-                        <div class="class-wrapper">
-                            <label for="pyro">Pyro</label>
-                            <input type="checkbox" name="profclasses" id="pyro" value="Pyro">
-                        </div>
-                        <div class="class-wrapper">
-                            <label for="demoman">Demoman</label>
-                            <input type="checkbox" name="profclasses" id="demoman" value="Demoman">
-                        </div>
-                        <div class="class-wrapper">
-                            <label for="heavy">Heavy</label>
-                            <input type="checkbox" name="profclasses" id="heavy" value="Heavy">
-                        </div>
-                        <div class="class-wrapper">
-                            <label for="engineer">Engineer</label>
-                            <input type="checkbox" name="profclasses" id="engineer" value="Engineer">
-                        </div>
-                        <div class="class-wrapper">
-                            <label for="spy">Spy</label>
-                            <input type="checkbox" name="profclasses" id="spy" value="Spy">
-                        </div>
-                        <div class="class-wrapper">
-                            <label for="sniper">Sniper</label>
-                            <input type="checkbox" name="profclasses" id="sniper" value="Sniper">
-                        </div>
-                        <div class="class-wrapper">
-                            <label for="medic">Medic</label>
-                            <input type="checkbox" name="profclasses" id="medic" value="Medic">
+                        <div id="class-selection-area">
+                            <div id="class-options-wrapper">
+                                <div class="class-option">
+                                    <img class="class-icon" src="./images/Leaderboard_class_scout.png">
+                                    <label for="scout"> Scout</label>
+                                    <input type="checkbox" name="profclasses" id="scout" value="Scout">
+                                </div>
+                                <div class="class-option">
+                                    <label for="soldier">Soldier</label>
+                                    <input type="checkbox" name="profclasses" id="soldier" value="Soldier">
+                                </div>
+                                <div class="class-option">
+                                    <label for="pyro">Pyro</label>
+                                    <input type="checkbox" name="profclasses" id="pyro" value="Pyro">
+                                </div>
+                                <div class="class-option">
+                                    <label for="demoman">Demoman</label>
+                                    <input type="checkbox" name="profclasses" id="demoman" value="Demoman">
+                                </div>
+                                <div class="class-option">
+                                    <label for="heavy">Heavy</label>
+                                    <input type="checkbox" name="profclasses" id="heavy" value="Heavy">
+                                </div>
+                                <div class="class-option">
+                                    <label for="engineer">Engineer</label>
+                                    <input type="checkbox" name="profclasses" id="engineer" value="Engineer">
+                                </div>
+                                
+                                <div class="class-option">
+                                    <label for="medic">Medic</label>
+                                    <input type="checkbox" name="profclasses" id="medic" value="Medic">
+                                </div>
+                                <div class="class-option">
+                                    <label for="sniper">Sniper</label>
+                                    <input type="checkbox" name="profclasses" id="sniper" value="Sniper">
+                                </div>
+                                <div class="class-option">
+                                    <label for="spy">Spy</label>
+                                    <input type="checkbox" name="profclasses" id="spy" value="Spy">
+                                </div>
+                            </div>
                         </div>
                     </section>
                     <div class="div-line"></div>
                     <!--QUESTION 5-->
                     <section class="favclass">
                         <label for="favclass"><h3><span class="question-number">5.</span> Who is your favorite class?</h3></label>
-                        <select name="favclass" id="favclass" >
-                            <option value="Scout">Scout</option>
+                        <select name="favclass" id="favclass" placeholder="None" >
+                            <option class="option-placeholder" value="" disabled selected>Select your option</option>
+                            <option value="Scout">Scout <img src="./images/Leaderboard_class_scout.png"></option>
                             <option value="Soldier">Soldier</option>
                             <option value="Pyro">Pyro</option>
                             <option value="Demoman">Demoman</option>
                             <option value="Heavy">Heavy</option>
                             <option value="Engineer">Engineer</option>
-                            <option value="Spy">Spy</option>
-                            <option value="Sniper">Sniper</option>
                             <option value="Medic">Medic</option>
+                            <option value="Sniper">Sniper</option>
+                            <option value="Spy">Spy</option>
                         </select>
                     </section>
                     <div class="div-line"></div>
@@ -157,29 +164,40 @@
 
                 <div id="night-mode-setting">
                     <p>Night Mode</p>
-                    <input class="night-mode-toggle-checkbox" type="checkbox" id="nightmode-toggle">
-                    <label class="night-mode-toggle-slider-area" for="nightmode-toggle" onclick="toggleNightMode()"></label>
-                    <label class="night-mode-toggle-slider slider-transition" for="nightmode-toggle" onclick="toggleNightMode()"></label>
+                    <!-- <input class="night-mode-toggle-checkbox" type="checkbox" id="nightmode-toggle"> -->
+                    <div class="night-mode-toggle-slider-area" onclick="toggleNightMode()">
+                        <div class="night-mode-toggle-slider slider-transition"></div>
+                    </div>
                     <img src="./images/sun-svgrepo-com.svg" id="img-sun"/>
                     <img src="./images/moon-svgrepo-com.svg" id="img-moon"/>
                 </div>
-               
+                    
                 <div class="div-line"></div>
 
                 <div id="clear-storage-setting">
-                    <p>Clear Local Storage <span class="warning-symbol">&#9888;</span></p>
+                    <div id="clear-storage-header"><p>Clear Local Storage <span class="warning-symbol">&#9888;</span></p></div>
                     <div class="warning-description">
-                        <p>
-                            Warning: this will clear all <br>
-                            saved form input.  <br>
-                        </p>
-                        <button class="clear-form-input-button" onclick="clearFormInput()">Clear</button>
-                        <p>
-                            Warning: this will clear all <br>
-                            saved form input as well as  <br>
-                            any display preferences.
-                        </p>
-                        <button class="clear-all-button" onclick="clearLocalStorage()">Clear All</button>
+                        <div id="clear-form-input-setting">
+                            <p>
+                                Warning: this will <br> 
+                                clear all saved form <br>
+                                input.
+                            </p>
+                            <button class="clear-form-input-button" onclick="clearFormInput()">Clear</button>
+                        </div>
+                        
+                        <div id="clear-all-setting">
+                            <p>
+                                Warning: this will <br>  
+                                clear all saved form <br>
+                                input as well as any <br>
+                                display preferences.
+                                
+                            </p>
+                            <button class="clear-all-button" onclick="clearLocalStorage()">Clear All</button>
+                        </div>
+                        
+                        
                     </div>
                 </div>
                 

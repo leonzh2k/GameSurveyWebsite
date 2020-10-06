@@ -87,14 +87,14 @@ function checkNightMode() {
     //the default style is light mode, so don't need to waste time changing it if night mode was false
     if (localStorage.getItem("nightMode") === "true") {
         //change toggle button
-        document.querySelector(".night-mode-toggle-slider").style.left = "150px";
+        document.querySelector(".night-mode-toggle-slider").style.left = "19px";
         document.querySelector(".night-mode-toggle-slider-area").style.backgroundColor = "rgb(0, 119, 255)";
         document.querySelector(".night-mode-toggle-slider-area").style.border = "rgb(0, 119, 255)";
         //change sun/moon icons
         document.querySelector("#img-moon").style.visibility = "visible";
         document.querySelector("#img-sun").style.visibility = "hidden";
         //changes to form
-        document.querySelector(".form").style.backgroundColor = "black";
+        document.querySelector(".form").style.backgroundColor = "rgb(34, 34, 34)";
         document.querySelector(".form").style.color = "rgb(219, 174, 76)";
         //changes to form elements
         inputs = document.querySelectorAll("input");
@@ -117,17 +117,17 @@ function checkNightMode() {
 
 function toggleNightMode() {
     /*turns night mode off*/
-    if (document.querySelector(".form").style.backgroundColor === "black") {
+    if (localStorage.getItem("nightMode") === "true") {
         //slides toggle slider
-        document.querySelector(".night-mode-toggle-slider").style.left = "130px";
+        document.querySelector(".night-mode-toggle-slider").style.left = "-1px";
         document.querySelector(".night-mode-toggle-slider-area").style.backgroundColor = "gray";
         document.querySelector(".night-mode-toggle-slider-area").style.border = "gray";
         //change sun/moon icons
         document.querySelector("#img-moon").style.visibility = "hidden";
         document.querySelector("#img-sun").style.visibility = "visible";
         //changes to form
-        document.querySelector(".form").style.backgroundColor = "white";
-        document.querySelector(".form").style.color = "black";
+        document.querySelector(".form").style.backgroundColor = "rgb(233, 233, 233)";
+        document.querySelector(".form").style.color = "#444444";
         
         //changes to form elements
         inputs = document.querySelectorAll("input");
@@ -149,14 +149,14 @@ function toggleNightMode() {
     /*turns night mode on*/
     else {
         //slides toggle slider
-        document.querySelector(".night-mode-toggle-slider").style.left = "150px";
+        document.querySelector(".night-mode-toggle-slider").style.left = "19px";
         document.querySelector(".night-mode-toggle-slider-area").style.backgroundColor = "rgb(0, 119, 255)";
         document.querySelector(".night-mode-toggle-slider-area").style.border = "rgb(0, 119, 255)";
         //change sun/moon icons
         document.querySelector("#img-moon").style.visibility = "visible";
         document.querySelector("#img-sun").style.visibility = "hidden";
         //changes to form
-        document.querySelector(".form").style.backgroundColor = "black";
+        document.querySelector(".form").style.backgroundColor = "rgb(34, 34, 34)";
         document.querySelector(".form").style.color = "rgb(219, 174, 76)";
         //changes to form elements
         inputs = document.querySelectorAll("input");

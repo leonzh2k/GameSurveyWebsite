@@ -87,7 +87,7 @@ function checkNightMode() {
     if (localStorage.getItem("nightMode") === "true") {
         //alert("night mode is on");
         //change toggle button
-        document.querySelector(".night-mode-toggle-slider").style.left = "150px";
+        document.querySelector(".night-mode-toggle-slider").style.left = "19px";
         document.querySelector(".night-mode-toggle-slider-area").style.backgroundColor = "rgb(0, 119, 255)";
         document.querySelector(".night-mode-toggle-slider-area").style.border = "rgb(0, 119, 255)";
         //change sun/moon icons
@@ -116,7 +116,7 @@ function checkNightMode() {
 function toggleNightMode() {
     /*turns night mode off*/
     if (localStorage.getItem("nightMode") === "true") {
-        document.querySelector(".night-mode-toggle-slider").style.left = "130px";
+        document.querySelector(".night-mode-toggle-slider").style.left = "-1px";
         document.querySelector(".night-mode-toggle-slider-area").style.backgroundColor = "gray";
         document.querySelector(".night-mode-toggle-slider-area").style.border = "gray";
         //change sun/moon icons
@@ -143,7 +143,7 @@ function toggleNightMode() {
     /*turns night mode on*/
     else {
         //slides toggle slider
-        document.querySelector(".night-mode-toggle-slider").style.left = "150px";
+        document.querySelector(".night-mode-toggle-slider").style.left = "19px";
         document.querySelector(".night-mode-toggle-slider-area").style.backgroundColor = "rgb(0, 119, 255)";
         document.querySelector(".night-mode-toggle-slider-area").style.border = "rgb(0, 119, 255)";
         //change sun/moon icons

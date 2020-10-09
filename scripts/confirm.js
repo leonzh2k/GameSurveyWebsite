@@ -94,7 +94,7 @@ function checkNightMode() {
         document.querySelector("#img-moon").style.visibility = "visible";
         document.querySelector("#img-sun").style.visibility = "hidden";
         //changes to form
-        document.querySelector(".form").style.backgroundColor = "black";
+        document.querySelector(".form").style.backgroundColor = "rgb(34, 34, 34)";;
         document.querySelector(".form").style.color = "rgb(219, 174, 76)";
         try {
             let answers1 = document.querySelectorAll(".answer-short");
@@ -124,7 +124,7 @@ function toggleNightMode() {
         document.querySelector("#img-sun").style.visibility = "visible";
         //changes to form
         document.querySelector(".form").style.backgroundColor = "white";
-        document.querySelector(".form").style.color = "black";
+        document.querySelector(".form").style.color = "#444444";
         try {
             let answers1 = document.querySelectorAll(".answer-short");
             for (var i = 0; i < answers1.length; i++) {
@@ -150,7 +150,7 @@ function toggleNightMode() {
         document.querySelector("#img-moon").style.visibility = "visible";
         document.querySelector("#img-sun").style.visibility = "hidden";
         //changes to form
-        document.querySelector(".form").style.backgroundColor = "black";
+        document.querySelector(".form").style.backgroundColor = "rgb(34, 34, 34)";;
         document.querySelector(".form").style.color = "rgb(219, 174, 76)";
         try {
             let answers1 = document.querySelectorAll(".answer-short");

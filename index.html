@@ -45,44 +45,52 @@
                         <span><h3><span class="question-number">4.</span> Which classes do you think you are decent at?</h3></span>
                         <div id="class-selection-area">
                             <div id="class-options-wrapper">
-                                <div class="class-option">
-                                    <img class="class-icon" src="./images/Leaderboard_class_scout.png">
+                                <label class="class-option">
+                                    <img class="tf2-class-icon" src="images/class-icons/Scout_emblem_RED.png"></i>
                                     <label for="scout"> Scout</label>
                                     <input type="checkbox" name="profclasses" id="scout" value="Scout">
-                                </div>
-                                <div class="class-option">
+                                </label>
+                                <label class="class-option">
+                                    <img class="tf2-class-icon" src="images/class-icons/Soldier_emblem_RED.png"></i>
                                     <label for="soldier">Soldier</label>
                                     <input type="checkbox" name="profclasses" id="soldier" value="Soldier">
-                                </div>
-                                <div class="class-option">
+                                </label>
+                                <label class="class-option">
+                                    <img class="tf2-class-icon" src="images/class-icons/Pyro_emblem_RED.png"></i>
                                     <label for="pyro">Pyro</label>
                                     <input type="checkbox" name="profclasses" id="pyro" value="Pyro">
-                                </div>
-                                <div class="class-option">
+                                </label>
+                                <label class="class-option">
+                                    <img class="tf2-class-icon" src="images/class-icons/Demoman_emblem_RED_beta2.png"></i>
                                     <label for="demoman">Demoman</label>
                                     <input type="checkbox" name="profclasses" id="demoman" value="Demoman">
-                                </div>
-                                <div class="class-option">
+                                </label>
+                                <label class="class-option">
+                                    <img class="tf2-class-icon" src="images/class-icons/Heavy_emblem_RED.png"></i>
                                     <label for="heavy">Heavy</label>
                                     <input type="checkbox" name="profclasses" id="heavy" value="Heavy">
-                                </div>
-                                <div class="class-option">
+                                </label>
+                                <label class="class-option">
+                                    <img class="tf2-class-icon" src="images/class-icons/Engineer_emblem_RED.png"></i>
                                     <label for="engineer">Engineer</label>
                                     <input type="checkbox" name="profclasses" id="engineer" value="Engineer">
-                                </div>
+                                </label>
                                 
-                                <div class="class-option">
+                                <label class="class-option">
+                                    <img class="tf2-class-icon" src="images/class-icons/Medic_emblem_RED.png"></i>
                                     <label for="medic">Medic</label>
                                     <input type="checkbox" name="profclasses" id="medic" value="Medic">
-                                </div>
-                                <div class="class-option">
+                                </label>
+                                <label class="class-option">
+                                    <img class="tf2-class-icon" src="images/class-icons/Sniper_emblem_RED.png"></i>
                                     <label for="sniper">Sniper</label>
                                     <input type="checkbox" name="profclasses" id="sniper" value="Sniper">
-                                </div>
-                                <div class="class-option">
+                                </label>
+                                <label class="class-option">
+                                    <img class="tf2-class-icon" src="images/class-icons/Spy_emblem_RED.png"></i>
                                     <label for="spy">Spy</label>
                                     <input type="checkbox" name="profclasses" id="spy" value="Spy">
-                                </div>
+                                </label>
                             </div>
                         </div>
                     </section>
@@ -113,11 +121,11 @@
                     <!--QUESTION 7-->
                     <section class="favmap">
                         <label for="favmap"><h3><span class="question-number">7.</span> What is your favorite map in the game? (max. 30 characters)</h3></label>
-                        <input list="favmaps" id="favmap" name="favmap" minlength="3" maxlength="30" required="true" >
+                        <input list="favmaps" id="favmap" name="favmap" minlength="3" maxlength="30" required="true" placeholder="Select or type here" >
                         <datalist id="favmaps">
-                            <option value="Dustbowl">Dustbowl</option>
-                            <option value="2Fort">2Fort</option>
-                            <option value="Hydro">Hydro</option>
+                            <option value="Dustbowl"></option>
+                            <option value="2Fort"></option>
+                            <option value="Hydro"></option>
                             <option value="Powerhouse"></option>
                             <option value="Granary"></option>
                             <option value="Harvest"></option>
@@ -135,7 +143,7 @@
                     <!--QUESTION 9-->
                     <section class="favhat">
                         <label for="favhat"><h3><span class="question-number">9.</span> What is your favorite cosmetic in the game? (max. 50 characters)</h3></label>
-                        <input type="text" id="favhat" name="favhat" maxlength="50" required="true">
+                        <input type="text" id="favhat" name="favhat" maxlength="50" required="true" placeholder="Type Here">
                     </section>
                     <div class="div-line"></div>
                     <!--QUESTION 10-->
@@ -147,15 +155,14 @@
                     
                     <button id="submit-button" id="submit" type="submit"  onclick="sendFormData()">Confirm</button>
             
-                    <!----other questions to ask: favorite weapon, what you want to nerf/buff-->
                 </form>
             </div>
         </div>
         
         <div class="settings-column">
-            <div class="open-settings-button-area">
-                <span class="open-settings-button" onclick="openSettings()">&#9881;</span>
-            </div>
+            <button class="open-settings-button" onclick="openSettings()">
+                <span class="open-settings-icon">&#9881;</span>
+            </button>
             <div class="settings settings-transition">
                 <a id="close-settings-button" onclick="closeSettings()">&times;</a>
                 <span id="settings-header">Settings</span>
@@ -168,8 +175,8 @@
                     <div class="night-mode-toggle-slider-area" onclick="toggleNightMode()">
                         <div class="night-mode-toggle-slider slider-transition"></div>
                     </div>
-                    <img src="./images/sun-svgrepo-com.svg" id="img-sun"/>
-                    <img src="./images/moon-svgrepo-com.svg" id="img-moon"/>
+                    <img src="./images/svg-icons/sun-svgrepo-com.svg" id="img-sun"/>
+                    <img src="./images/svg-icons/moon-svgrepo-com.svg" id="img-moon"/>
                 </div>
                     
                 <div class="div-line"></div>
@@ -207,9 +214,9 @@
                 <div class="div-line"></div>
 
                 <div id="navigation">
-                    <p>Navigation <img class="compass" src="./images/compass-svgrepo-com.svg"></p>
+                    <p>Navigation <img class="compass" src="./images/svg-icons/compass-svgrepo-com.svg"></p>
                     <ol>
-                        <li><a href="index.html">Survey</a><img class="arrow" src="./images/arrow-left-svgrepo-com.svg"></li>
+                        <li><a href="index.html">Survey</a><img class="arrow" src="./images/svg-icons/arrow-left-svgrepo-com.svg"></li>
                         <li><a href="confirm.html">Confirmation</a></li>
                         <li><a href="submitted.html">Submission</a> </li>
                     </ol>

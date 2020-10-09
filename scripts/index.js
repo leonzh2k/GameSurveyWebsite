@@ -6,14 +6,20 @@ window.onload=function(){
     //setClickedGoBack();
     try {
         checkSettings();
-        checkNightMode();
-        checkTextAreaSize();
-        checkDevice();
-        refillForm();
     }
+    
     catch(err) {
-        alert(err.message)
+        alert(err.message);
     }
+    
+    checkNightMode();
+    
+    
+    
+    checkTextAreaSize();
+    checkDevice();
+    refillForm();
+    
     
 }
 //https://stackoverflow.com/questions/11381673/detecting-a-mobile-browser
@@ -47,7 +53,7 @@ function openSettings(animation) {
         document.querySelector(".night-mode-toggle-slider").classList.remove("slider-transition");
 
         document.querySelector(".settings").style.width = "300px";
-        document.querySelector(".open-settings-button-area").style.visibility = "hidden";
+        document.querySelector(".open-settings-button").style.visibility = "hidden";
         //adding the slide-in-transition class too early actually applies it to the setting element even
         //when openSettings was called before it!!!
         setTimeout(() => { 
@@ -58,7 +64,7 @@ function openSettings(animation) {
     else {
         localStorage.setItem("settingsOpen", "true");
         document.querySelector(".settings").style.width = "300px";
-        document.querySelector(".open-settings-button-area").style.visibility = "hidden";
+        document.querySelector(".open-settings-button").style.visibility = "hidden";
     }
     
 }
@@ -66,7 +72,7 @@ function openSettings(animation) {
 function closeSettings() {
     localStorage.setItem("settingsOpen", "false");
     document.querySelector(".settings").style.width = "0px";
-    setTimeout(() => {  document.querySelector(".open-settings-button-area").style.visibility = "visible"; }, 300);
+    setTimeout(() => {  document.querySelector(".open-settings-button").style.visibility = "visible"; }, 300);
 }
 
 /*"front-end stuff"*/

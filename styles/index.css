@@ -64,10 +64,17 @@ datalist, select, option {
     display: none;
 }
 
+input::placeholder {
+    font-family: 'TF2 Build';
+    letter-spacing: 1px;
+}
 
-
-
-
+.tf2-class-icon {
+    height: 25px;
+    width: 25px;
+    /* display: inline; */
+    margin-right: 5px;
+}
 
 
 #class-selection-area {
@@ -77,12 +84,12 @@ datalist, select, option {
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    border: 2px red solid;
+    /* border: 2px red solid; */
 }
 
 #class-options-wrapper {
     /* width: 100%; */
-    border: 1px yellow solid;
+    /* border: 1px yellow solid; */
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -91,7 +98,7 @@ datalist, select, option {
 }
 
 .class-option {
-    border: 1px green solid;
+    /* border: 1px green solid; */
     background-color: rgb(58, 58, 58);
     border-radius: 5px;
 
@@ -113,18 +120,18 @@ datalist, select, option {
     justify-self: flex-start;
     height: 18px;
     width: 18px;
-    border: 1px red solid;
+    /* border: 1px red solid; */
     /* vertical-align: middle; */
 }
 
-@media screen and (max-width: 600px) { 
+@media screen and (max-width: 400px) { 
     #class-selection-area {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-        border: 2px red solid;
+        /* border: 2px red solid; */
     }
     #class-options-wrapper {
         display: flex;
@@ -140,7 +147,13 @@ datalist, select, option {
 }
 
 #favmap {
-    width: 300px;
+    width: 335px;
+}
+
+#favmap::placeholder {
+    font-family: 'TF2 Build';
+    font-size: 100%;
+    letter-spacing: 1px;
 }
 
 #favhat {
@@ -176,6 +189,7 @@ textarea {
 
 textarea::placeholder {
     font-family: 'TF2 Build';
+    letter-spacing: 1px;
 }
 
 @media screen and (max-width: 700px) { 
@@ -343,7 +357,7 @@ textarea::placeholder {
 
 /*Fixed elements fuckup when you zoom in, need to write js to reposition on zoom*/
 #submit-button {
-    
+    cursor: pointer;
     display: flex;
     position: relative; 
     display: block;
@@ -440,14 +454,18 @@ textarea::placeholder {
     justify-content: flex-end;
 }
 
-.open-settings-button-area {
+.open-settings-button {
+    cursor: pointer;
+    outline: none;
     background-color: black;
     display: flex;
     height: 60px;
     width: 60px;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 1vw;
+    border: 1px black;
     float: right;
     position: fixed;
     right: 5px;
@@ -458,10 +476,11 @@ textarea::placeholder {
 
 
 
-.open-settings-button {
+
+.open-settings-icon {
     color: gray;
     font-size: 60px;
-    margin-top: -10%;
+    margin-top: -4px;
     transition-property: color, animation;
     transition-duration: 0.2s, 10s;
     transform-origin: 53% 53%;
@@ -469,12 +488,12 @@ textarea::placeholder {
 }
 
 @media screen and (max-width: 700px) { 
-    .open-settings-button-area {
+    .open-settings-button {
         width: 40px;
         height: 40px;
     }
 
-    .open-settings-button {
+    .open-settings-icon {
         font-size: 40px;
     }
 }
@@ -543,6 +562,7 @@ textarea::placeholder {
 }
 
 .night-mode-toggle-slider-area {
+    cursor: pointer;
     color: gray;
     background-color: gray;
     border: gray 2px solid;
@@ -673,6 +693,7 @@ textarea::placeholder {
 }
 
 .settings .clear-form-input-button, .settings .clear-all-button {
+    cursor: pointer;
     border: 1px rgb(18, 105, 204) solid;
     border-radius: 5px;
     color: white;
@@ -737,6 +758,7 @@ textarea::placeholder {
 }
 
 #close-settings-button {
+    cursor: pointer;
     color: rgb(173, 173, 173);
     transition: color;
     transition-duration: 0.2s;
@@ -744,7 +766,7 @@ textarea::placeholder {
     padding-left: 32px;
     font-size: 50px;
     position: absolute;
-    left: 210px;
+    left: 225px;
     margin-top: -30px;
 }
 

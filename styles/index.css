@@ -602,15 +602,43 @@ textarea::placeholder {
     visibility: hidden;
 }
 
+#clear-storage-setting #clear-storage-header {
+    border: 2px red solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    align-items: center; 
+    
+}
 
-.settings .warning-symbol {
+.warning-symbol {
+    display: inline-flex;
     color: red;
     font-size: 24px;
-    display: inline;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    /* padding-bottom: 5px; */
+    border: 2px green solid;
     /* position: absolute;
     top: 190px;
     left: 175px; */
+}
+
+.warning-symbol div {
+    width: 25px;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px blue solid;
     vertical-align: middle;
+    text-align: center;
+    padding-bottom: 3px;
+    padding-left: 20x;
+    justify-self: flex-end;
+    margin-left: 5px;
+   
 }
 
 .settings .warning-description {
@@ -724,13 +752,7 @@ textarea::placeholder {
     color: white;
 }
 
-#clear-storage-setting #clear-storage-header {
-    border: 2px red solid;
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    vertical-align: middle;
-}
+
 
 
 

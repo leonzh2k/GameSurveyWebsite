@@ -498,7 +498,7 @@ textarea::placeholder {
     }
 }
 
-.open-settings-button:hover {
+.open-settings-icon:hover {
     color: white;
     /* animation: spin;
     animation-duration: 3s;

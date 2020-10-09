@@ -550,7 +550,7 @@ textarea::placeholder {
     display: inline-flex;
     position: relative;
     align-items: center;
-    border: 2px red solid;
+    /* border: 2px red solid; */
     width: 100%;
 }
 
@@ -623,7 +623,7 @@ textarea::placeholder {
 }
 
 #clear-storage-setting #clear-storage-header {
-    border: 2px red solid;
+    /* border: 2px red solid; */
     display: flex;
     flex-direction: row;
     justify-content: flex-start; 
@@ -639,7 +639,7 @@ textarea::placeholder {
     justify-content: center;
     align-items: center;
     /* padding-bottom: 5px; */
-    border: 2px green solid;
+    /* border: 2px green solid; */
     /* position: absolute;
     top: 190px;
     left: 175px; */
@@ -651,7 +651,7 @@ textarea::placeholder {
     flex-flow: row wrap;
     justify-content: flex-end;
     align-items: center;
-    border: 1px blue solid;
+    /* border: 1px blue solid; */
     vertical-align: middle;
     text-align: center;
     padding-bottom: 3px;
@@ -671,22 +671,26 @@ textarea::placeholder {
     width: 215px;
     height: 250px;
     border-radius: 10px;
-    margin-left: 32px;
+    margin-left: 45px;
     font-size: 12px;
 }
 
 #clear-form-input-setting, #clear-all-setting {
-    border: 2px green solid;
+    /* border: 2px green solid; */
+    padding: 10px 10px 10px 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgb(56, 56, 56);
+    border-radius: 5px;
+    border: 2px rgb(56, 56, 56)solid;
 
 }
 
 .warning-description p {
     display: flex;
-    border: 2px red solid;
+    /* border: 2px red solid; */
     margin-left: 0px;
     width: 100%;
     justify-content: center;

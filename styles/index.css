@@ -98,10 +98,10 @@ input::placeholder {
 }
 
 .class-option {
+    
     /* border: 1px green solid; */
     background-color: rgb(58, 58, 58);
     border-radius: 5px;
-
     display: inline-flex;
     flex-direction: row;
     justify-content: space-around;
@@ -474,9 +474,6 @@ textarea::placeholder {
     z-index: 2;
 }
 
-
-
-
 .open-settings-icon {
     color: gray;
     font-size: 60px;
@@ -662,7 +659,6 @@ textarea::placeholder {
 }
 
 .settings .warning-description {
-
     display: inline-flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -788,19 +784,6 @@ textarea::placeholder {
     background-color: rgb(14, 84, 163);
     border: rgb(14, 84, 163);
 }
-
-
-.night-mode-toggle-label-on:hover {
-    color: white;
-    background-color: rgb(95, 95, 95);
-}
-
-.night-mode-toggle-label-off:hover {
-    color: white;
-    background-color: black;
-}
-
-
 
 
 

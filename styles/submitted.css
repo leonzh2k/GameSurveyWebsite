@@ -342,6 +342,7 @@ body {
 }
 
 .open-navbar-button-area {
+    cursor: pointer;
     background-color: black;
     display: flex;
     height: 60px;
@@ -446,10 +447,11 @@ body {
 
 .about-creator p, .about-game p, .about-credits p, .about-disclaimer p  {
     padding-left: 32px;
+    font-size: 14px;
     /*prevents text from spazzing the fk out*/
-    white-space: nowrap;
-    width: 100px;
-    border: 2px red solid;
+    white-space: wrap;
+    width: 300px;
+    /* border: 2px red solid; */
     /* position: absolute; */
 }
 

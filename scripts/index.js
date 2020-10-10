@@ -3,24 +3,24 @@
 
 //window onload only works for one script so other pages cannot use it.
 window.onload=function(){
-    //setClickedGoBack();
-    try {
-        checkSettings();
-    }
-    
-    catch(err) {
-        alert(err.message);
-    }
-    
+    // try {
+    //     if (localStorage.getItem("firstVisit") === "true") {
+    //         localStorage.setItem("nightMode" = "false");
+    //         localStorage.setItem("settingsOpen", "false");
+    //         localStorage.setItem("firstVisit", "false");
+    //     }
+    //     else {
+            
+    //     }
+    // }
+    // catch (err) {
+    //     alert(err.message);
+    // }
+    checkSettings();
     checkNightMode();
-    
-    
-    
+    refillForm();
     checkTextAreaSize();
     checkDevice();
-    refillForm();
-    
-    
 }
 //https://stackoverflow.com/questions/11381673/detecting-a-mobile-browser
 //resize textarea does not work on mobile, so detect if mobile and show resize placeholder text based on rsult
@@ -30,7 +30,7 @@ function checkDevice() {
     if (check) {
         let textareas = document.querySelectorAll("textarea");
         for (let textarea of textareas) {
-            textarea.placeholder = "";
+            textarea.placeholder = "Enter your response here";
         }
     }
 };
@@ -244,6 +244,7 @@ function clearLocalStorage() {
     localStorage.clear();
     // localStorage.setItem("clearedStorage", "true");
     //reload page
+    localStorage.setItem("firstVisit", "true");
     window.location.replace("./index.html")
 }
 

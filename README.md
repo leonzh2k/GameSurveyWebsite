@@ -6,7 +6,7 @@ View at: https://leonzh2k.github.io/GameSurvey/
 
 ## Table of Contents
 * [Aim](#aim)
-* [Learning Outcomes](
+* [Results](#results)
 * [Technologies](#technologies)
 * [Features](#features)
 * [Things To Keep In Mind](#Things-To-Keep-In-Mind)
@@ -18,6 +18,14 @@ View at: https://leonzh2k.github.io/GameSurvey/
 * To get comfortable with core web development languages
 * Implement common website features
 * Put key web design principles into practice
+
+## Results
+### What I Learned
+* HTML Forms
+* CSS
+* JavaScript
+* Site layout techniques (Grid, Flexbox)
+* Responsive design techniques (media queries, %width/height, viewport)
 
 
 ## Technologies

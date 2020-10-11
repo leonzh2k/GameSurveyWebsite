@@ -31,7 +31,10 @@ View at: https://leonzh2k.github.io/GameSurvey/
 * Use a server-side language (possibly PHP) to send results of survey to an email address
 
 ## References
-* Sun, Moon, Compass icons from [svgrepo.com](svgrepo.com)
 * Site background images by [u/reminixe](https://www.reddit.com/user/reminixe/)
 * Maps pictured in site background images by the TF2 map designers
+* Sun, Moon, Compass, Arrow icons from [svgrepo.com](svgrepo.com)
+* Class icons in Question 4: [https://wiki.teamfortress.com/wiki/Category:Class_emblems]
+* TF Logo in submitted.html: 
+
  

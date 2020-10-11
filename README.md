@@ -28,5 +28,9 @@ View at: https://leonzh2k.github.io/GameSurvey/
 * Navigation feature to bypass form validation for those who  want to explore the site (or try to break it)
 
 ### To-do
-* Use a server-side langauge (possibly PHP) to send results of survey to an email address
+* Use a server-side language (possibly PHP) to send results of survey to an email address
+
+##References
+* Sun, Moon, Compass icons from <svgrepo.com>
+* Site background images by [u/reminixe](https://www.reddit.com/user/reminixe/)
  

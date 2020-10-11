@@ -56,5 +56,5 @@ View at: https://leonzh2k.github.io/GameSurvey/
 * Sun, Moon, Compass, Arrow icons from [svgrepo.com](svgrepo.com)
 * Class icons in Question 4: https://wiki.teamfortress.com/wiki/Category:Class_emblems
 * TF Logo in submitted.html: https://icon-library.com/icon/team-fortress-2-icon-26.html
-
+* TF2 Font: https://www.dafont.com/tf2-build.font
  

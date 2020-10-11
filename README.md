@@ -28,5 +28,5 @@ View at: https://leonzh2k.github.io/GameSurvey/
 * Navigation feature to bypass form validation for those who  want to explore the site (or try to break it)
 
 ### To-do
-* Use a back-end langauge to send results of survey to an email address
+* Use a server-side langauge (possibly PHP) to send results of survey to an email address
  

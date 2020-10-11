@@ -10,7 +10,7 @@ View at: https://leonzh2k.github.io/GameSurvey/
 * [Features](#features)
 
 
-##Features:
+## Features:
 
 Responsive Design
 

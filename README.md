@@ -1,4 +1,4 @@
-# Website Description
+# GameSurvey
 
 A survey about the game Team Fortress 2, made with Vanilla HTML, CSS, and JavaScript
 

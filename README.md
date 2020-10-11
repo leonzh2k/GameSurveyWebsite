@@ -8,7 +8,10 @@ View at: https://leonzh2k.github.io/GameSurvey/
 * [Aim](#aim)
 * [Technologies](#technologies)
 * [Features](#features)
+* [Things To Keep In Mind](#important-info)
 * [References](#references)
+
+
 
 ## Aim
 * To get comfortable with core web development languages
@@ -31,6 +34,9 @@ View at: https://leonzh2k.github.io/GameSurvey/
 
 ### To-do
 * Use a server-side language (possibly PHP) to send results of survey to an email address
+
+## Things to Keep In Mind
+* This website has no server-side functionality; as a consequence form input is not actually sent anywhere. This may be changed in a future release
 
 ## References
 * Maps pictured in site background images by the TF2 map designers

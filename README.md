@@ -1,8 +1,11 @@
-# GameSurvey
+# GameSurvey 
 
 A survey about the game Team Fortress 2, made with Vanilla HTML, CSS, and JavaScript
 
 View at: https://leonzh2k.github.io/GameSurvey/
+
+## Table of Contents
+
 
 Features:
 

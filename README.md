@@ -13,6 +13,7 @@ View at: https://leonzh2k.github.io/GameSurvey/
 ## Aim
 * To get comfortable with core web development languages
 * Put key web design principles into practice
+* Implement common website features
 
 ## Technologies
 * HTML5

@@ -31,6 +31,7 @@ View at: https://leonzh2k.github.io/GameSurvey/
 * Use a server-side language (possibly PHP) to send results of survey to an email address
 
 ## References
-* Sun, Moon, Compass icons from <svgrepo.com>
+* Sun, Moon, Compass icons from [svgrepo.com](svgrepo.com)
 * Site background images by [u/reminixe](https://www.reddit.com/user/reminixe/)
+* Maps pictured in site background images by the TF2 map designers
  

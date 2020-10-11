@@ -8,15 +8,16 @@ View at: https://leonzh2k.github.io/GameSurvey/
 * [Aim](#aim)
 * [Technologies](#technologies)
 * [Features](#features)
-* [Things To Keep In Mind](#important-info)
+* [Things To Keep In Mind](#T)
 * [References](#references)
 
 
 
 ## Aim
 * To get comfortable with core web development languages
-* Put key web design principles into practice
 * Implement common website features
+* Put key web design principles into practice
+
 
 ## Technologies
 * HTML5
@@ -24,19 +25,20 @@ View at: https://leonzh2k.github.io/GameSurvey/
 * JavaScript
 
 
-## Features:
+## Features
 * Responsive Design (try it on different devices!)
 * Form Validation 
 * Dropdown Menu
 * Saves Form Input On page reload/close/switch
 * Options to clear form data and all stored data
-* Navigation feature to bypass form validation for those who  want to explore the site (or try to break it)
+* Navigation feature for those who just want to explore the site
 
 ### To-do
 * Use a server-side language (possibly PHP) to send results of survey to an email address
 
 ## Things to Keep In Mind
-* This website has no server-side functionality; as a consequence form input is not actually sent anywhere. This may be changed in a future release
+* This website has no back-end functionality; as a consequence form input is not actually sent anywhere. This may be changed in a future release
+* The "Navigation" section of the Settings menu allows you to bypass form validation and thus detracts from the intended user experience. This option has been provided for users who just want to take a look around without having to fulfill all form requirements first. If you want the intended user experience, it is recommended to not use this.
 
 ## References
 * Maps pictured in site background images by the TF2 map designers

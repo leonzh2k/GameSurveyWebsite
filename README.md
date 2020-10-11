@@ -7,13 +7,13 @@ View at: https://leonzh2k.github.io/GameSurvey/
 ## Table of Contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [Setup](#setup)
-
-Features:
+* [Features](#features)
 
 
-Mobile Support
-Responsive
+##Features:
+
+Responsive Design
+
 Form Validation <br />
 Night Mode <br />
 Saves Form Input On page reload/close/change <br />

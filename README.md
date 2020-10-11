@@ -26,7 +26,10 @@ View at: https://leonzh2k.github.io/GameSurvey/
 * JavaScript
 * Site layout techniques (Grid, Flexbox)
 * Responsive design techniques (media queries, %width/height, viewport)
+<<<<<<< HEAD
 * Proper file structure of a website
+=======
+>>>>>>> 70ece932c10ed0700588c48b19f5eb798c3a45e5
 
 
 ## Technologies

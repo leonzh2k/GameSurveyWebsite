@@ -5,7 +5,9 @@ A survey about the game Team Fortress 2, made with Vanilla HTML, CSS, and JavaSc
 View at: https://leonzh2k.github.io/GameSurvey/
 
 ## Table of Contents
-
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
 
 Features:
 

@@ -6,9 +6,10 @@ View at: https://leonzh2k.github.io/GameSurvey/
 
 ## Table of Contents
 * [Aim](#aim)
+* [Learning Outcomes](
 * [Technologies](#technologies)
 * [Features](#features)
-* [Things To Keep In Mind](#T)
+* [Things To Keep In Mind](#Things-To-Keep-In-Mind)
 * [References](#references)
 
 

@@ -24,13 +24,9 @@ View at: https://leonzh2k.github.io/GameSurvey/
 * Responsive Design
 * Form Validation <br />
 * Saves Form Input On page reload/close/switch</br>
+* Clear Form Input and Clear all storage options <br />
+* Navigation feature to bypass form validation for those who  want to explore the site (or try to break it)
 
-
-Clear Form Input and Clear all storage options <br />
-Navigation feature to bypass form validation for those who want to explore the site (or try to break it)
-
-
-Features to Implement:
-
-PHP to send results of survey to email addresses
+### To-do
+* Use a back-end langauge to send results of survey to an email address
  

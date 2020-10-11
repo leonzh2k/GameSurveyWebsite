@@ -30,7 +30,7 @@ View at: https://leonzh2k.github.io/GameSurvey/
 ### To-do
 * Use a server-side language (possibly PHP) to send results of survey to an email address
 
-##References
+## References
 * Sun, Moon, Compass icons from <svgrepo.com>
 * Site background images by [u/reminixe](https://www.reddit.com/user/reminixe/)
  

@@ -37,6 +37,6 @@ View at: https://leonzh2k.github.io/GameSurvey/
 * Site background images by [u/reminixe](https://www.reddit.com/user/reminixe/) on Reddit
 * Sun, Moon, Compass, Arrow icons from [svgrepo.com](svgrepo.com)
 * Class icons in Question 4: https://wiki.teamfortress.com/wiki/Category:Class_emblems
-* TF Logo in submitted.html: 
+* TF Logo in submitted.html: https://icon-library.com/icon/team-fortress-2-icon-26.html
 
  

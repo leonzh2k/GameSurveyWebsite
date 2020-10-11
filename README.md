@@ -12,7 +12,10 @@ View at: https://leonzh2k.github.io/GameSurvey/
 ## Aim
 * To get a feel of core web development languages
 
-
+## Technologies
+* HTML5
+* CSS
+* JavaScript
 
 
 ## Features:

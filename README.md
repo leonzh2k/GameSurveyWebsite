@@ -28,12 +28,10 @@ View at: https://leonzh2k.github.io/GameSurvey/
 * Responsive design techniques (media queries, %width/height, viewport)
 * Proper file structure of a website
 
-
 ## Technologies
 * HTML5
 * CSS
 * JavaScript
-
 
 ## Features
 * Responsive Design (try it on different devices!)
@@ -45,7 +43,7 @@ View at: https://leonzh2k.github.io/GameSurvey/
 
 ### To-do
 * Use a server-side language (possibly PHP) to send results of survey to an email address
-* Use node.js to send results of survey to an email address?
+* Use node.js to send results of survey to an email address and change hosting to heroku?
 
 ## Things to Keep In Mind
 * This website has no back-end functionality; as a consequence form input is not actually sent anywhere. This may be changed in a future release
